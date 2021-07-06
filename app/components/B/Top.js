@@ -42,7 +42,7 @@ function Top() {
 						<li className="my-2 pt-6">
 							・ お知らせ：　
 							<span
-								className="iken has-tooltip-top has-tooltip-danger has-text-info is-size-4"
+								className="iken has-tooltip-top has-tooltip-danger has-text-info is-size-4 is-size-5-mobile"
 								data-tooltip="予定価格とモデルから、素早く一般工事費を推定するWEBアプリ"
 							>
 								i入札(建築編)

@@ -65,11 +65,11 @@ function Top() {
 
 				<div className="box notification has-background-white-ter py-4 mx-6">
 					<h3 className="subtitle is-size-5">
-						<div className="has-text-centered">
+						<div className="has-text-centered is-size-7-mobile">
 							<p>公開日：2021/07/07</p>
 						</div>
 					</h3>
-					<div className="subtitle has-text-centered has-text-primary-dark has-text-weight-semibold">
+					<div className="subtitle has-text-centered is-size-7-mobile has-text-primary-dark has-text-weight-semibold">
 						完了予定日：2021/11/25
 					</div>
 				</div>

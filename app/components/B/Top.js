@@ -31,15 +31,15 @@ function Top() {
 								<a href="https://archmapp2.github.io/bulmaJS/">【こちら】</a>
 							</div>
 							<br />
-							<span className="has-text-primary-dark is-size-5 has-text-weight-semibold ml-6">
+							<div className="has-text-primary-dark is-size-5 has-text-weight-semibold has-text-centered">
 								[ using Bulma ]
-							</span>
-							<span className="has-text-dark is-size-5 ml-6">
+							</div>
+							<div className="has-text-dark is-size-5 has-text-centered">
 								Let's try Javascript with Bulma
-							</span>
+							</div>
 						</li>
 						{/* <div className="my-2 mx-6 px-2 pt-4"> */}
-						<li className="my-2 pt-4">
+						<li className="my-2 pt-6">
 							・ お知らせ：　
 							<span
 								className="iken has-tooltip-top has-tooltip-danger has-text-info is-size-4"

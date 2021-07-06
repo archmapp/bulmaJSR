@@ -14,7 +14,7 @@ function About() {
 							<span>About</span>
 							<div className="box mt-2 py-4">
 								<h1 className="notification title has-background-info-dark has-text-white">
-									WEBアプリで楽しく　🧡
+									WEBアプリで楽しく　💕
 								</h1>
 
 								<ul className="panel">
@@ -57,7 +57,7 @@ function About() {
 							</div>
 							<div className="box py-4">
 								<h1 className="notification title has-background-warning-dark has-text-white">
-									最近公開したWEBアプリ　🧡
+									最近公開したWEBアプリ　💕
 								</h1>
 
 								<ul className="panel">
@@ -159,7 +159,7 @@ function About() {
 							</div>
 							<div className="box">
 								<h1 className="notification title has-background-success-dark has-text-white">
-									WEBアプリで楽しく　🧡
+									WEBアプリで楽しく　💕
 								</h1>
 
 								<ul className="panel">

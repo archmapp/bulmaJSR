@@ -1,0 +1,46 @@
+https://github.com/archmapp/bulmaJSR
+
+https://gracious-carson-8848e2.netlify.app
+
+
+
+>git init
+    set .gitignore
+
+new
+>git remote add origin https://github.com/archmapp/bulmaJSR.git
+>git branch -M main
+
+>git add .
+>git commit -m "first"
+
+>git push -u origin main
+
+
+[Code]
+[Settings]
+  <Pages>
+  GitHub Pages
+    Branch:main -> /docs -> [Save]
+
+    https://archmapp.github.io/bulmaJSR/
+
+
+netlify
+
+  [Build settings]
+      Repository:
+          github.com/archmapp/bulmaJSR
+      Base directory:
+          /
+      Build command:
+          npm run build
+      Publish directory:
+          /docs
+      Deploy log visibility:
+          Logs are public
+      Builds:
+          Active
+
+https://gracious-carson-8848e2.netlify.app
+

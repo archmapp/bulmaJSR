@@ -1,8 +1,7 @@
 import React from 'react'
 
 function NshortJS() {
-
-  function CC({ __html }) {
+	function CC({ __html }) {
 		return <div dangerouslySetInnerHTML={{ __html }}></div>
 	}
 
@@ -60,7 +59,6 @@ function NshortJS() {
 									</div>
 								</div>
 							</article>
-
 							<div className="box">
 								<div className="box">
 									<h2 className="is-size-4 has-background-white-ter p-2 km">
@@ -174,7 +172,6 @@ function NshortJS() {
 									</div>
 								</div>
 							</div>
-
 							<h2
 								className="
                 subtitle
@@ -187,7 +184,6 @@ function NshortJS() {
 								shortJS.js{' '}
 								<span className="subtitle">のソースコード・抜粋</span>
 							</h2>
-
 							<blockquote className="is-size-6 ml-2">
 								<div className="sourceview">
 									<pre id="pre1" className="brush: html;">
@@ -472,7 +468,7 @@ export const scrTT = (sel) =>
 													$$.qcLに追加します。
 												</dd>
 												<dt>$$.ocLm(o,｛trgt: target｝, 'remove');</dt>
-												<dd className="py-2">
+												<dd className="py-3">
 													oをクリックすると
 													<br />
 													　「要素targetのクラスリストから'is-active'クラスを削除する」
@@ -482,15 +478,15 @@ export const scrTT = (sel) =>
 													（'is-active'、'toggle'がデフォルト）
 												</dd>
 												<dt>$$.bulmaMenu('#burger', '#nav-links');</dt>
-												<dd className="py-2">
+												<dd className="py-3">
 													狭い画面[Mobile・Tablet]で表示されるBulmaのburgerメニューのコントロール
 												</dd>
 												<dt>$$.codeSA('.pre1')</dt>
-												<dd class="py-2">
-													セレクター'.pre1'を持つ全ての要素に対して、その中のコードをクリックしたときにそれを選択状態にします。
+												<dd className="py-3">
+													セレクター'.pre1'を持つ全ての要素に対して、その中のコードをクリックしたときにそのコード全体をを選択状態にします。
 												</dd>
 												<dt>$$.scrTT(sel)</dt>
-												<dd class="py-2">
+												<dd className="py-3">
 													セレクターselを持つ要素に、スムーズにスクロールします。
 												</dd>
 											</dl>
@@ -498,12 +494,20 @@ export const scrTT = (sel) =>
 									</ul>
 								</div>
 							</div>
-							<button
-								className="button has-background-grey has-text-white-ter is-pulled-right mr-5 mt-3"
-								onClick={() => $$.scrTT('#top')}
-							>
-								<i className="fa fa-arrow-circle-o-up"></i>&nbsp;&nbsp;トップ
-							</button>
+							<div className="is-flex is-justify-content-space-between">
+								<button
+									className="button has-background-grey has-text-white-ter mt-3"
+									onClick={() => $$.scrTT('#top')}
+								>
+									<i className="fa fa-arrow-circle-o-up"></i>&nbsp;&nbsp;トップ
+								</button>
+								<button
+									className="button has-background-grey has-text-white-ter mt-3"
+									onClick={() => $$.scrTT('#top')}
+								>
+									<i className="fa fa-arrow-circle-o-up"></i>&nbsp;&nbsp;トップ
+								</button>
+							</div>
 						</div>
 						<div className="column"></div>
 					</div>

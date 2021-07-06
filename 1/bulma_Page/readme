@@ -1,0 +1,13 @@
+https://www.ecbeing.net/contents/detail/235
+
+いまさら聞けないSameSite CookieとGoogle Chrome 80
+
+その対策とはSameSite属性をNoneに指定する（＋Secure属性の指定）すなわち、いままでと同じ仕様にする為にNoneを明示するという対策になります。
+しかしここには一つ、さらなる仕様変更が隠されております。
+
+今回の仕様変更において、Noneに仕様変更をするだけでは不十分になりました。
+SameSiteにNoneを指定する場合は、Secure属性が必須となったのです。
+このSecure属性というのはこれもCookieの設定の一つなのですが、SSLというURLがHTTPSという暗号化された通信下でのみ読み取れるCookieの指定となります。
+なので、今回の対応をする際は、SSL対応がサイトとして必須となります。
+
+

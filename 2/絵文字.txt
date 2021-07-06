@@ -1,0 +1,11 @@
+
+CTRL + I
+Window + .
+
+
+
+
+React.js バージョン確認方法
+  プロジェクト配下に移動
+  npm list --depth=0
+

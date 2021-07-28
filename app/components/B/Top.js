@@ -1,15 +1,8 @@
-const bulmaToast = require('../../js/bulma-toast.min.js')
-import png from '../../assets/img/FLEXBOX練習帳800x400.png'
-// import bulmaToast from '../../js/bulma-toast.min.js'
+import React from 'react'
 
-import React, { useState, useEffect, useRef } from 'react'
-
-import Hero from '../Hero'
+import Hero from '../Utils/Hero'
 
 function Top() {
-	const [slide, setSlide] = useState(50)
-
-	useEffect(() => {}, [])
 
   function CC({ __html }) {
 		return <div dangerouslySetInnerHTML={{ __html }}></div>

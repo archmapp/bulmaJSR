@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Bulma入門 javascript Handlebars Electron Angular notification"
+		/>
+
+		<title>Bulma Project</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+		/>
+
+		<link
+			rel="icon"
+			type="image/png"
+			href="../../assets/img/faviconBulma.png"
+			sizes="16x16"
+		/>
+
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+		></script>
+
+		<script src="../../js/shortBulma$$.js"></script>
+
+		<style>
+			.chestnut-light {
+				color: #947600;
+				// color: rgb(118,047,007);
+			}
+		</style>
+	</head>
+
+	<body>
+		<section className="section">
+			<div className="container">
+				<div className="notification has-background-info-light is-bold mb-1">
+					<div className="container">
+						<h1 className="title is-3 has-text-info">
+							shortBulma <span className="is-size-4">ライブラリ</span>
+						</h1>
+						<h2 className="subtitle is-5 has-text-white">
+							<strong className="subtitle is-6 has-text-danger"
+								>shortBulma$$.js</strong
+							>
+							・
+							<strong className="subtitle is-6 has-text-danger">shortJS.js</strong>
+						</h2>
+					</div>
+				</div>
+
+				<div className="columns mt-5">
+					<div className="column"></div>
+					<div className="column is-8 content">
+						<!-- 各ページ -->
+						<article className="message is-info">
+							<div className="message-header">
+								<p className="has-text-centered has-text-weight-bold">
+									このサイト独自の Bulma用ライブラリです
+								</p>
+							</div>
+							<div
+								className="message-body has-background-white-bis"
+								style="border-bottom: inset 2px #aaaa88"
+							>
+								<div className="ml-3 mb-6">
+									<li>
+										参考ページ：
+										<a
+											href="https://archmapp2.github.io/bulmaJS/src/sub/js/shortBulma.html"
+											className="has-tooltip-top has-tooltip-warning has-text-grey has-text-weight-bold is-size-5"
+											data-tooltip="[CTRL]キーを押しながら、クリック"
+										>
+											shortBulma ライブラリ
+										</a>
+										もご覧ください
+									</li>
+								</div>
+							</div>
+						</article>
+
+						<div className="box">
+							<div className="box">
+								<h2 className="is-size-4 has-background-white-ter p-2 km">解説</h2>
+								<div className="is-size-5-tablet lh7">
+									~~ 自作ライブラリ <strong>shortJS.js</strong> ~~
+								</div>
+								<div className="content">
+									<ul>
+										<li>
+											BulmaでJavascriptを利用するために、このWebサイトでは　<strong>shortJS.js</strong>　
+											というライブラリを使っています。
+
+											<article className="panel is-warning mt-5">
+												<p className="panel-heading mb-0">特徴</p>
+												<div className="panel-block">
+													<span className="panel-icon mb-5">
+														<i
+															className="fas fa-2x fa-mug-hot chestnut-light"
+															aria-hidden="true"
+														></i>
+													</span>
+													<span className="ml-4"
+														>BulmaでJavascriptを短い名前で利用します</span
+													>
+												</div>
+												<div className="panel-block">
+													<span className="panel-icon mb-5">
+														<i
+															className="fas fa-2x fa-mug-hot chestnut-light"
+															aria-hidden="true"
+														></i>
+													</span>
+													<span className="ml-4"
+														>これらのエイリアス（ショートカット名）はできるだけ少数に限定</span
+													>
+												</div>
+												<div className="panel-block">
+													<span className="panel-icon mb-5">
+														<i
+															className="fas fa-2x fa-mug-hot chestnut-light"
+															aria-hidden="true"
+														></i>
+													</span>
+													<span className="ml-4"
+														>Bulmaの特定の機能を実現する関数も追加</span
+													>
+												</div>
+												<div className="panel-block">
+													<!-- <span className="panel-icon mb-5">
+                            <i className="fas fa-2x fa-mug-hot chestnut-light" aria-hidden="true"></i>
+                          </span> -->
+													<span className="ml-6"
+														>（ 例：$$.bulmaMenu、$$.bulmaTabs、$$.bulmaModal等
+														）</span
+													>
+												</div>
+											</article>
+
+											<h3
+												className="
+													is-size-5
+													has-background-white-ter
+													mt-2
+													mb-1
+													px-2
+													py-1
+												"
+											>
+												使い方
+											</h3>
+											<div className="box has-background-warning-light mt-1">
+												<h4
+													className="is-size-6 has-background-white-ter px-2 py-1"
+												>
+													<strong
+														className="
+															subtitle
+															is-6
+															has-text-danger has-text-weight-bold
+														"
+														>shortJS.js</strong
+													>
+												</h4>
+												<ul>
+													<li className="mb-2">
+														<span className="has-text-weight-bold">module</span
+														>として利用
+													</li>
+													<li>設定の例：import * as $$ from './js/shortJS';</li>
+													<li>但し、pathは状況によって変わります。</li>
+													<li>
+														<div>
+															このサイトでは、
+															<span className="has-text-weight-bold"
+																>webpack.config.js</span
+															>内で
+														</div>
+													</li>
+													<li>
+														<div className="mt-3">
+															<dl>
+																<dt>$$.de(f)</dt>
+																<dd>ロード時にイベントリスナーを設定</dd>
+																<dt>$$.qAll('.notification .delete')</dt>
+																<dd>各notificationの削除ボタンを全て取得</dd>
+																<dt>$$.oe = (o, f)</dt>
+																<dd>オブジェクトにイベントリスナーを設定</dd>
+																<dt>$$.Id('n1')</dt>
+																<dd>idが'n1'である要素を取得</dd>
+															</dl>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<hr />
+										<li>
+											<strong></strong>
+											<p className="has-text-centered mt-3">
+												(
+												<small></small>
+												)
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<h2
+							className="
+								subtitle
+								has-text-danger has-background-white-ter
+								mb-2
+								pl-4
+								p-2
+							"
+						>
+							shortJS.js <span className="subtitle">のソースコード・抜粋</span>
+						</h2>
+
+						<blockquote className="is-size-6 ml-2">
+							<div className="sourceview">
+								<pre id="pre1" className="brush: html;">
+// shortJS.js
+</pre
+								>
+							</div>
+						</blockquote>
+						<div className="box">
+							<h2 className="is-size-4 has-background-white-ter p-2 km">解説</h2>
+							<div className="is-size-5-tablet lh7">
+								~~ Bulmaの ショートカットライブラリ ~~
+							</div>
+							<div className="content">
+								<ul>
+									<li>
+										BulmaでJavascriptを利用するとき、このWebサイトでは
+										<strong>shortJS.js</strong> というライブラリを使います。
+									</li>
+
+									<li className="pt-2">
+										以下に、いくつかの例を解説をしますが、基本的には標準のJavascriptの<strong>ショートカット</strong>です。
+									</li>
+									<hr />
+									<li className="pt-2">
+										<dl>
+											<dt>$$.Id0(id)、$$.Id(id)</dt>
+											<dd className="py-2">
+												idを持つ最初の要素を取得します。<br />
+												$$.Id(id)は、idに#が付いていても構いません。
+											</dd>
+											<dt>$$.q(sel)</dt>
+											<dd className="py-2">
+												セレクターselを持つ最初の要素を取得します。
+											</dd>
+											<dt>$$.qAll(sel)</dt>
+											<dd className="py-2">
+												セレクターselを持つ全ての要素を取得します。
+											</dd>
+											<dt>$$.oq(o, sel)</dt>
+											<dd className="py-2">
+												要素oの中で、セレクターselを持つ最初の要素を取得します。
+											</dd>
+											<dt>$$.de(f)</dt>
+											<dd className="py-2">
+												ページがロードされた時点で、イベントリスナーfを設定します。
+											</dd>
+											<dt>$$.oe(sel, f, evNa = 'click')</dt>
+											<dd className="py-2">
+												要素oがクリックされたとき、イベントリスナーfを設定します。<br />
+												'click'イベントがデフォルトです。
+											</dd>
+											<dt>$$.qAe(sel, f)</dt>
+											<dd className="py-2">
+												セレクター'sel'を持つ全ての要素を取得し、それぞれにイベントリスナーfを設定する。
+											</dd>
+											<dt>$$.ocLm(o, { trgt: target }, 'remove');</dt>
+											<dd className="py-2">
+												oをクリックすると<br />　「要素targetのクラスリストから'is-active'クラスを削除する」<br />というイベントリスナーを設定<br />（'is-active'、'toggle'がデフォルト）
+											</dd>
+											<dt>$$.bulmaMenu('#burger', '#nav-links');</dt>
+											<dd className="py-2">
+												狭い画面で表示されるBulmaのburgerメニューのコントロール
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div className="column"></div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

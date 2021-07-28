@@ -1,0 +1,23 @@
+webpackHotUpdate("main",{
+
+/***/ "./app/components/C/ComponentA.js":
+false,
+
+/***/ "./app/components/C/ComponentB.js":
+false,
+
+/***/ "./app/components/C/ComponentC.js":
+false,
+
+/***/ "./app/components/N/Nreact.js":
+/*!************************************!*\
+  !*** ./app/components/N/Nreact.js ***!
+  \************************************/
+/*! exports provided: UserCount, default */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed (from ../node_modules/babel-loader/lib/index.js):\\nSyntaxError: c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\99\\\\app\\\\components\\\\N\\\\Nreact.js: Only one default export allowed per module. (223:0)\\n\\n\\u001b[0m \\u001b[90m 221 |\\u001b[39m \\u001b[36mexport\\u001b[39m \\u001b[36mdefault\\u001b[39m \\u001b[33mAppUseContextUseState\\u001b[39m\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 222 |\\u001b[39m\\u001b[0m\\n\\u001b[0m\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 223 |\\u001b[39m \\u001b[36mexport\\u001b[39m \\u001b[36mdefault\\u001b[39m \\u001b[33mNreact\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m     |\\u001b[39m \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 224 |\\u001b[39m\\u001b[0m\\n    at Object._raise (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:816:17)\\n    at Object.raiseWithData (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:809:17)\\n    at Object.raise (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:770:17)\\n    at Object.checkDuplicateExports (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:13917:12)\\n    at Object.checkExport (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:13841:14)\\n    at Object.parseExport (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:13668:12)\\n    at Object.parseStatementContent (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:12651:27)\\n    at Object.parseStatement (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:12545:17)\\n    at Object.parseBlockOrModuleBlockBody (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:13134:25)\\n    at Object.parseBlockBody (c:\\\\Users\\\\Owner\\\\Desktop\\\\Nodejs\\\\Bulma\\\\bulmaJSR\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:13125:10)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL2FwcC9jb21wb25lbnRzL04vTnJlYWN0LmpzLmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app/components/N/Nreact.js\n");
+
+/***/ })
+
+})

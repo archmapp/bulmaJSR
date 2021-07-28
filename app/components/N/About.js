@@ -12,7 +12,7 @@ function About() {
 								archmapp@i.softbank.jp]
 							</div>
 							<span>About</span>
-							<div className="box mt-2 py-4">
+							<div className="box mt-2 mb-6 py-4">
 								<h1 className="notification title has-background-info-dark has-text-white">
 									WEBアプリで楽しく　💕
 								</h1>
@@ -92,19 +92,18 @@ function About() {
 									</li>
 									<li className="my-0 ml-5 pt-2">
 										<span className="iken is-size-4 has-text-weight-bold has-text-danger-dark">
-											さんすう入門
+											初めての【 けいさん 】
 										</span>
 										<span className="is-size-6 ml-6">
-											小学一年生　　~~ たし算・ひき算・かけ算 ~~ 参考： (
-											YOUTUBE )
+											小学一年生　　~~ たし算・ひき算・かけ算 ~~
 										</span>
 									</li>
 									<li className="ml-5 py-2">
 										<a
-											href="https://safe-peak-55766.herokuapp.com/api"
+											href="https://affectionate-wozniak-de01a2.netlify.app/"
 											className="ml-3"
 										>
-											URL：https://archmapp2.github.io/bulmaJS/src/sub/react/react.html
+											URL：https://affectionate-wozniak-de01a2.netlify.app/
 										</a>
 									</li>
 								</ul>
@@ -157,14 +156,14 @@ function About() {
 									</li>
 								</ul>
 							</div>
-							<div className="box">
+							<div className="box my-6">
 								<h1 className="notification title has-background-success-dark has-text-white">
 									WEBアプリで楽しく　💕
 								</h1>
 
-								<ul className="panel">
+								<ul className="panel is-flex is-justify-content-center is-align-content-center">
 									<li>
-										<h1 className="panel-block subtitle has-background-info-light">
+										<h1 className="panel-block subtitle has-background-info-light my-3">
 											team:&nbsp;&nbsp;
 											<span
 												className="has-text-weight-bold has-text-black-ter"
@@ -175,7 +174,7 @@ function About() {
 										</h1>
 									</li>
 									<li>
-										<h1 className="panel-block subtitle has-background-info-light has-text-centered pl-5">
+										<h1 className="panel-block subtitle has-background-success-light ml-6 my-3">
 											全てに感謝！　💞💕
 										</h1>
 									</li>

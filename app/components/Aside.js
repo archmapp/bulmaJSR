@@ -1,16 +1,5 @@
 import React from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
-import Overview from './B/Overview'
-import Customize from './B/Customize'
-import Concepts from './B/Concepts'
-import Variables from './B/Variables'
-import Columns from './B/Columns'
-import Elements from './B/Elements'
-import Components from './B/Components'
-import Form from './B/Form'
-import Layout from './B/Layout'
-import Helpers from './B/Helpers'
-import Extensions from './B/Helpers'
+import { NavLink } from 'react-router-dom'
 
 function Aside() {
 	const aStyle = { color: 'Blue', fontWeight: 'bold' }
@@ -31,7 +20,12 @@ function Aside() {
 					</p>
 
 					<nav className="is-flex is-flex-direction-column has-text-white mb-4">
-						<NavLink exact to="/" className="pt-1 ml-3" activeStyle={aStyle}>
+						<NavLink
+							exact
+							to="/"
+							className="pt-1 py-2 ml-3"
+							activeStyle={aStyle}
+						>
 							トップ
 						</NavLink>
 						{/* <NavLink to="/Overview" className=" pt-1 ml-3" activeStyle={aStyle}>
@@ -106,7 +100,8 @@ function Aside() {
 						/> */}
 						<NavLink
 							to="/Extensions"
-							className="mt-2 mx-3 pl-1 has-background-info-light"
+							className="mt-2 mx-3 pl-1"
+							style={{ backgroundColor: '#a4c0e2' }}
 							activeStyle={aStyle}
 							onClick={pageLoading}
 						>
@@ -130,7 +125,8 @@ function Aside() {
 					<div style={{ textAlign: 'center' }} className="my-2">
 						<NavLink
 							to="/About"
-							className="navbar-item has-text-black-bis mx-3 py-1"
+							className="navbar-item has-text-black-bis mx-3 py-1 has-tooltip-bottom has-tooltip-warning"
+							data-tooltip="情報・サンプル集"
 							onClick={pageLoading}
 						>
 							About&nbsp;

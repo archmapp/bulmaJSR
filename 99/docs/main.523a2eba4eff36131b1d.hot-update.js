@@ -1,0 +1,15 @@
+webpackHotUpdate("main",{
+
+/***/ "./app/components/ContextC/ComponentA.js":
+/*!***********************************************!*\
+  !*** ./app/components/ContextC/ComponentA.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _context_CountContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../context/CountContext */ \"./app/components/context/CountContext.js\");\n/* harmony import */ var _ComponentB__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentB */ \"./app/components/ContextC/ComponentB.js\");\n\n\n\n\nvar ComponentA = function ComponentA() {\n  var _useCountContext = Object(_context_CountContext__WEBPACK_IMPORTED_MODULE_1__[\"useCountContext\"])(),\n      count = _useCountContext.count;\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"Componet A\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ComponentB__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, \"A: \", count));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ComponentA);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAvY29tcG9uZW50cy9Db250ZXh0Qy9Db21wb25lbnRBLmpzPzBmNDAiXSwibmFtZXMiOlsiQ29tcG9uZW50QSIsInVzZUNvdW50Q29udGV4dCIsImNvdW50Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBOztBQUVBLElBQU1BLFVBQVUsR0FBRyxTQUFiQSxVQUFhLEdBQU07QUFDekIseUJBQWtCQyw2RUFBZSxFQUFqQztBQUFBLE1BQVFDLEtBQVIsb0JBQVFBLEtBQVI7O0FBRUEsc0JBQ0MscUZBQ0MsbUZBREQsZUFFQywyREFBQyxtREFBRCxPQUZELGVBR0MsNkVBQU9BLEtBQVAsQ0FIRCxDQUREO0FBT0MsQ0FWRDs7QUFZZUYseUVBQWYiLCJmaWxlIjoiLi9hcHAvY29tcG9uZW50cy9Db250ZXh0Qy9Db21wb25lbnRBLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xyXG5pbXBvcnQgeyB1c2VDb3VudENvbnRleHQgfSBmcm9tICcuLi9jb250ZXh0L0NvdW50Q29udGV4dCdcclxuaW1wb3J0IENvbXBvbmVudEIgZnJvbSAnLi9Db21wb25lbnRCJ1xyXG5cclxuY29uc3QgQ29tcG9uZW50QSA9ICgpID0+IHtcclxuY29uc3QgeyBjb3VudCB9ID0gdXNlQ291bnRDb250ZXh0KClcclxuXHJcbnJldHVybiAoXHJcblx0PGRpdj5cclxuXHRcdDxwPkNvbXBvbmV0IEE8L3A+XHJcblx0XHQ8Q29tcG9uZW50QiAvPlxyXG5cdFx0PHA+QToge2NvdW50fTwvcD5cclxuXHQ8L2Rpdj5cclxuKVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBDb21wb25lbnRBXHJcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./app/components/ContextC/ComponentA.js\n");
+
+/***/ })
+
+})

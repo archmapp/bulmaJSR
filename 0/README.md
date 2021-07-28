@@ -1,4 +1,7 @@
-https://archmapp.github.io/hajimeteno-keisan/
+https:さんすう入門
+C:\Users\Owner\Desktop\Nodejs\mean\BradWebpack\BRAD_react-sass-webpack\2 route slide
+
+//archmapp.github.io/hajimeteno-keisan/
 
 
 ty7575au@yahoo.co.jp

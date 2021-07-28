@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
 
 const contents = [
 	`1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
@@ -33,7 +32,6 @@ function Components() {
 	}, [])
 
 	const cardF = (n, e) => {
-		console.log(e)
 		$$.q('.card-content').innerHTML = contents[n]
 		return
 	}

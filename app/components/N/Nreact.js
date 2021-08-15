@@ -10,7 +10,7 @@ function Nreact() {
 						Nreact
 					</div>
 					<div className="is-flex is-justify-content-center is-align-items-center">
-						準備中！
+						準備中！ TEST
 					</div>
 					<button
 						className="button has-background-grey has-text-white-ter is-pulled-right mr-5 mt-3"

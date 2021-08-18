@@ -1,0 +1,15 @@
+webpackHotUpdate("main",{
+
+/***/ "./app/App.js":
+/*!********************!*\
+  !*** ./app/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_bulma_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bulma-components */ \"../node_modules/react-bulma-components/cjs/index.js\");\n/* harmony import */ var react_bulma_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bulma_components__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar Input = react_bulma_components__WEBPACK_IMPORTED_MODULE_1__[\"Form\"].Input,\n    Field = react_bulma_components__WEBPACK_IMPORTED_MODULE_1__[\"Form\"].Field,\n    Control = react_bulma_components__WEBPACK_IMPORTED_MODULE_1__[\"Form\"].Control,\n    Label = react_bulma_components__WEBPACK_IMPORTED_MODULE_1__[\"Form\"].Label;\n\nfunction App() {\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(function () {}, []);\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bulma_components__WEBPACK_IMPORTED_MODULE_1__[\"Button\"], {\n    color: \"primary\"\n  }, \"My Bulma button\"));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAvQXBwLmpzPzljZWEiXSwibmFtZXMiOlsiSW5wdXQiLCJGb3JtIiwiRmllbGQiLCJDb250cm9sIiwiTGFiZWwiLCJBcHAiLCJ1c2VFZmZlY3QiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUVBO0FBQ0E7QUFFQSxJQUFRQSxLQUFSLEdBQXlDQywyREFBekMsQ0FBUUQsS0FBUjtBQUFBLElBQWVFLEtBQWYsR0FBeUNELDJEQUF6QyxDQUFlQyxLQUFmO0FBQUEsSUFBc0JDLE9BQXRCLEdBQXlDRiwyREFBekMsQ0FBc0JFLE9BQXRCO0FBQUEsSUFBK0JDLEtBQS9CLEdBQXlDSCwyREFBekMsQ0FBK0JHLEtBQS9COztBQUVBLFNBQVNDLEdBQVQsR0FBZTtBQUNkQyx5REFBUyxDQUFDLFlBQU0sQ0FBRSxDQUFULEVBQVcsRUFBWCxDQUFUO0FBRUEsc0JBQ0MscUlBQ0MsMkRBQUMsNkRBQUQ7QUFBUSxTQUFLLEVBQUM7QUFBZCx1QkFERCxDQUREO0FBS0E7O0FBRWNELGtFQUFmIiwiZmlsZSI6Ii4vYXBwL0FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCdcblxuaW1wb3J0IHsgRm9ybSB9IGZyb20gJ3JlYWN0LWJ1bG1hLWNvbXBvbmVudHMnXG5pbXBvcnQgeyBCdXR0b24gfSBmcm9tICdyZWFjdC1idWxtYS1jb21wb25lbnRzJ1xuXG5jb25zdCB7IElucHV0LCBGaWVsZCwgQ29udHJvbCwgTGFiZWwgfSA9IEZvcm1cblxuZnVuY3Rpb24gQXBwKCkge1xuXHR1c2VFZmZlY3QoKCkgPT4ge30sIFtdKVxuXG5cdHJldHVybiAoXG5cdFx0PD5cblx0XHRcdDxCdXR0b24gY29sb3I9XCJwcmltYXJ5XCI+TXkgQnVsbWEgYnV0dG9uPC9CdXR0b24+XG5cdFx0PC8+XG5cdClcbn1cblxuZXhwb3J0IGRlZmF1bHQgQXBwXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app/App.js\n");
+
+/***/ })
+
+})

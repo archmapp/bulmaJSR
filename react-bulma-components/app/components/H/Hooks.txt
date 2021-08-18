@@ -1,0 +1,63 @@
+
+
+https://qiita.com/seira/items/9e38204758030cd5442a
+React.memoでコンポーネントをラップすることにより、コンポーネントをメモ化し、不要な再描画をスキップ出来ることがわかりました。
+
+ただし、React.memoを利用した場合でも、親コンポーネントからコールバック関数をpropsとして受け取った子コンポーネントは再描画されてしまいます。関数の内容が同じだとしても、コンポーネントが再描画される度に再生成されるので、等価ではないからです。
+
+関数のメモ化に利用出来るのが、メモ化されたコールバック関数を返すuseCallbackです。
+
+
+useCallbackでメモ化したコールバック関数を返すことによりパフォーマンス向上が期待できます。
+React.memoでラップしたコンポーネントに、メモ化したコールバック関数をpropsとして渡すことで、不要に再描画させません。
+
+useCallbackでメモ化されたコールバック関数は、React.memoでメモ化されたコンポーネントへ渡して利用することで初めて不要な再描画をスキップ出来るようになります。
+
+
+useCallbackは関数自体をメモ化しますが、useMemoは関数の結果をメモ化し、保持してくれます。
+  (useMemo はパフォーマンス最適化のために使うもの)
+
+useMemoは、関数コンポーネント内で、何度やっても結果が同じ場合の「関数による計算の結果」をメモ化出来るという点で、React.memoと大きく異なります。
+
+
+https://blog.webdevsimplified.com/2020-06/use-reducer/
+
+Essentially, the reducer function takes in a current state as well as an action to perform on the state and it returns the new state. 
+
+The component just tells our reducer what actions to perform and the reducer handles all the complex logic. This is great since it separates out the logic of the state from the component itself and makes it easier to reuse and share this state between components.
+
+What happens if you want to pass data to your reducer, though? This is actually really simple. Since we can pass anything we want to dispatch we can just add our data to the object we pass to dispatch. The common practice is to put all your data inside a property called payload on your object. Here is an example of how to do that.
+
+  <button onClick={() => {
+        dispatch({ type: 'change-count', payload: { amount: 5 } })
+      }}>
+  
+  function reducer(count, action) {
+    switch (action.type) {
+      case 'increment':
+        return count + 1
+      case 'decrement':
+        return count - 1
+      case 'reset':
+        return 0
+      case 'change-count':
+        return count + action.payload.amount
+      default:
+        return count
+    }
+  }
+
+All we had to do in order to add this new action was create a new section in our reducer to handle this new action. Then we added a call to dispatch to call that action and gave it a payload with the amount we want to change our count by.
+
+Cleaning Up Actions
+One of the biggest downsides to useReducer is that all the actions are defined in strings. This makes it easy to accidentally misspell the action type and cause a bug. One easy way to minimize these types of mistakes is to use a constant object to contain all available actions. This then gives you autocomplete on action types.
+
+
+
+ HTMLTemplateElement の content (en-US) プロパティは、読み取り専用の DocumentFragment で、テンプレートが表現する DOM サブツリーを保持しています。
+
+script要素を type="text/template" 等とする事でテンプレートとして扱うライブラリもありますが、script要素内に書かれたコンテンツはあくまでテキストとして保持されているので、JavaScript側でHTML要素として扱えるような処理が必要になります。
+ それに対してtemplate要素内に書かれたコンテンツはテキストではなくHTML要素として存在
+
+ 
+

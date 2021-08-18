@@ -1,0 +1,76 @@
+@import './bulma_v0.9.3/bulma.sass';
+@import './bulma-extensions.min.css';
+@import './bulma-checkradio.min.css';
+@import './bulma-tooltip.min.css';
+// @import '../../node_modules/bulma-extensions/bulma-badge/dist/css/bulma-badge.min.css';
+
+
+// @import '../../node_modules/bulma-extensions/bulma-tagsinput/dist/css/bulma-tagsinput.min.css';
+// @import '../../node_modules/bulma-extensions/bulma-badge/dist/css/bulma-badge.min.css';
+
+.sidebar-left {
+	background-color: #c8c8e5;
+	color: white;
+	min-width: 112px;
+	width: 125px;
+	/* flex: 1; */
+}
+
+body {
+	// font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	color: #333;
+}
+
+.chestnut-light {
+	color: #947600;
+	// color: rgb(118,047,007);
+}
+
+.iken {
+	font-family: 'HG行書体', 'HGP行書体', 'HGS行書体', 'HGP教科書体', 'Script',
+		'ＭＳ 明朝', serif;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.82);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.33s ease-out;
+	transform: scale(1.2);
+}
+
+.overlay-inner {
+	text-align: center;
+	max-width: 700px;
+}
+
+body.overlay-is-open .overlay,
+.overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+form div, form p {
+  // color: pink;
+	color: #f84316;
+}
+
+form div, form p::before {
+  content: "　";
+}
+
+label {
+	display: block;
+	margin-top: 7px;
+	font-size: 0.8rem;
+}

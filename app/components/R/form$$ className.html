@@ -1,0 +1,412 @@
+<!-- form$$ className.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Bulma入門 javascript Handlebars Electron Angular notification"
+		/>
+		<title>Bulma Project Javascript Form</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css"
+		/>
+
+		<link
+			rel="icon"
+			type="image/png"
+			href="../../assets/img/faviconBulma.png"
+			sizes="16x16"
+		/>
+
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+		></script>
+
+		<script src="../../js/shortBulma$$.js"></script>
+		<!-- <script src="../../js/shortBulma$$.js"></script> -->
+		<!-- <script src="shortBulma$$.js"></script> -->
+		<!-- <script src="./js/shortBulma$$.js"></script> -->
+
+		<style>
+			dt {
+				/* color:#cccccc; */
+				color: #333333;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav
+			className="navbar is-primary has-text-weight-medium has-shadow"
+			role="navigation"
+			aria-label="Main navigation"
+			id="nav"
+		>
+			<div className="container">
+				<div className="navbar-brand">
+					<a href="../../../index.html" className="navbar-item" title="Top page"
+						>BulmaProject</a
+					>
+					<div id="burger" className="navbar-burger" data-target="navbarMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div className="navbar-menu is-primary is-pulled-right mr-2" id="nav-links">
+					<div className="navbar-start navbar-item">
+						<a
+							href="https://bulma.io/documentation/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="button navbar-item is-primary is-fullwidth mt-1"
+							title="Bulma home!!"
+						>
+							<span className="icon">
+								<img src="../../assets/img/bulma32.ico" alt="bulma" />
+							</span>
+							<span>Bulma</span>
+						</a>
+					</div>
+
+					<div className="navbar-end has-text-dark">
+						<a href="../../sub/js/js.html" className="navbar-item has-text-right"
+							>Javascript</a
+						>
+						<a href="../../sub/hbs/hbs.html" className="navbar-item has-text-right"
+							>Handlebars</a
+						>
+						<a
+							href="../../sub/tron/tron.html"
+							className="navbar-item has-text-right"
+							>Electron</a
+						>
+						<a href="../../sub/ang/ang.html" className="navbar-item has-text-right"
+							>Angular</a
+						>
+						<a
+							href="../../sub/react/react.html"
+							className="navbar-item has-text-right"
+							>React</a
+						>
+						<a href="../../sub/flex/flex.html" className="navbar-item">FLEXBOX</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section className="section">
+			<div className="container">
+				<div className="notification is-bold mb-1">
+					<div className="container">
+						<h1 className="title">Form</h1>
+						<h2 className="subtitle is-5">
+							Form のサンプル・ 始めての　<strong>Bulma-Extensions</strong>
+						</h2>
+					</div>
+				</div>
+
+				<div className="columns mt-3">
+					<div className="column"></div>
+					<div className="column is-8 content">
+						<article className="message is-primary">
+							<div className="message-header">
+								<p className="is-size-4 p-3">Form のサンプル</p>
+							</div>
+
+							<div
+								className="message-body has-background-white-bis"
+								style="border-bottom: inset 2px #aaaa88"
+							>
+								<div className="has-text-grey-dark mb-2">
+									スタイルに、
+									<a
+										href="https://jenil.github.io/bulmaswatch/darkly/"
+										className="is-size-4 has-text-warning"
+										><strong>bulmaswatch</strong></a
+									>
+									を利用
+								</div>
+								<p>
+									チェックボックス・ラジオボタンには、<strong>Bulma-Extensions</strong>も使っています。
+								</p>
+							</div>
+						</article>
+
+						<div className="box">
+							<div className="notification py-1">
+								<!-- <div className="notification has-background-warning-light py-1  "> -->
+								DevToolsのconsoleにも出力　[ f12, shift+ctrl+I ]
+							</div>
+
+							<form>
+								<div className="field">
+									<label className="label">Name</label>
+									<div className="control has-icons-left">
+										<input
+											className="input"
+											id="name"
+											type="text"
+											placeholder="Text input"
+										/>
+										<span className="icon is-small is-left">
+											<i className="fas fa-user"></i>
+										</span>
+									</div>
+								</div>
+
+								<div className="field">
+									<label className="label">Email</label>
+									<div className="control has-icons-left has-icons-right">
+										<input
+											className="input is-danger"
+											id="email"
+											type="email"
+											placeholder="Email input"
+											value=""
+										/>
+										<span className="icon is-small is-left">
+											<i className="fas fa-envelope"></i>
+										</span>
+									</div>
+								</div>
+
+								<div className="field">
+									<label className="label">Subject</label>
+									<div className="control">
+										<div className="select">
+											<select id="sel">
+												<option>Select dropdown</option>
+												<option>With options</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<div className="field">
+									<label className="label">Message</label>
+									<div className="control">
+										<textarea
+											className="textarea"
+											id="msg"
+											placeholder="Textarea"
+										></textarea>
+									</div>
+								</div>
+								<div className="field">
+									<div className="control">
+										<label className="checkbox">
+											<input type="checkbox" id="chk" value="value1" />
+											I agree to the <a href="#">terms and conditions</a>
+										</label>
+									</div>
+								</div>
+
+								<div className="field">
+									<div className="control" id="rGroup">
+										<label className="radio">
+											<input type="radio" name="question" value="rad_value1" />
+											Yes
+										</label>
+										<label className="radio">
+											<input type="radio" name="question" value="rad_value2" />
+											No
+										</label>
+									</div>
+								</div>
+								<hr />
+
+								<p>
+									~~~~~ Bulma-Extensions (<strong>bulma-checkradio</strong>)
+									~~~~~
+								</p>
+								<div className="field">
+									<input
+										type="checkbox"
+										className="is-checkradio"
+										id="chkEx"
+										name="chkEx"
+										value="value1Ex"
+									/>
+									<!-- checked="checked" -->
+									<label htmlFor="chkEx"
+										>I agree to the <a href="#">terms and conditions</a></label
+									>
+								</div>
+
+								<div
+									className="field is-flex is-flex-direction-column"
+									id="rGroupEx"
+								>
+									<label></label>
+									<input
+										type="radio"
+										className="is-checkradio"
+										id="rd1"
+										name="question2"
+										value="rad_value1Ex"
+									/>
+									<label for="rd1">Yes</label>
+									<input
+										type="radio"
+										className="is-checkradio"
+										id="rd2"
+										name="question2"
+										value="rad_value2Ex"
+									/>
+									<label for="rd2">No</label>
+								</div>
+
+								<!--  -->
+								<div className="field is-grouped">
+									<div className="control" id="submit">
+										<button className="button is-link mt-4">Submit</button>
+									</div>
+									<div className="control" id="reset">
+										<button className="button is-link is-light mt-4">Reset</button>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<article className="panel">
+							<p className="panel-heading mb-1">
+								<!-- <p className="panel-heading has-background-info-light mb-1"> -->
+								送信データの情報
+							</p>
+
+							<div className="data has-background-grey">
+								<!-- <a className="panel-block">
+              <span className="panel-icon">
+                <i className="fas fa-book" aria-hidden="true"></i>
+              </span>
+              bulma
+            </a> -->
+							</div>
+						</article>
+						<hr />
+
+						<div className="box">
+							<h2 className="subtitle mb-2 p-2">
+								<!-- <h2 className="subtitle has-background-white-ter mb-2 p-2"> -->
+								上記のソースコード
+							</h2>
+						</div>
+					</div>
+					<div className="column"></div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			$$bulmaMenu('#burger', '#nav-links')
+			$$codeS('#pre1')
+
+			$$de(() => {
+				$$q('#name').focus()
+				$$qe('#name', (e) => console.log(e.target.value), 'change')
+				$$qe('#email', (e) => console.log(e.target.value), 'change')
+				$$qe('#sel', (e) => console.log(e.target.value), 'change')
+				$$qe('#msg', (e) => console.log(e.target.value), 'change')
+
+				$$qe(
+					'#chk',
+					(e) => console.log(`${e.target.value}: ${e.target.checked}`),
+					'change'
+				)
+
+				$$qAe(
+					'#rGroup input',
+					(e) => {
+						console.log(`${e.target.value}: ${e.target.checked}`)
+					},
+					'change'
+				)
+
+				$$qe(
+					'#chkEx',
+					(e) => console.log(`${e.target.value}: ${e.target.checked}`),
+					'change'
+				)
+
+				$$qAe(
+					'#rGroupEx input',
+					(e) => {
+						console.log(`${e.target.value}: ${e.target.checked}`)
+					},
+					'change'
+				)
+
+				$$qe('#submit', (e) => {
+					e.preventDefault()
+					console.log(e.target.innerHTML)
+					dispData()
+				})
+				$$qe('#reset', (e) => {
+					// e.preventDefault();
+					e.target.form.reset()
+				})
+			})
+
+			const dispData = () => {
+				let data = ''
+
+				data += mkData('name', '#name')
+				data += mkData('email', '#email')
+				data += mkData('sel', '#sel')
+				data += mkData('msg', '#msg')
+				data += mkData('chk', `${$$Id('#chk').value}: ${$$Id('#chk').checked}`)
+				data += mkData('rGroup', getRadioValue('question'))
+				data +=
+					'<span className="panel-block has-text-black-bis mt-3">　~~~~~  Extentions  ~~~~~</span>'
+				data += mkData(
+					'chkEx',
+					`${$$Id('#chkEx').value}: ${$$Id('#chkEx').checked}`
+				)
+				data += mkData('rGroupEx', getRadioValue('question2'))
+				$$q('.data').innerHTML = `<div className="">${data}</div>`
+			}
+
+			const mkData = (hd, sel) => {
+				if (['chk', 'chkEx', 'rGroup', 'rGroupEx'].includes(hd)) {
+					return `
+          <span className="panel-block px-4">
+            #${hd}: &nbsp;<strong>${sel}</strong>
+          </span>
+          `
+				} else {
+					return `
+          <span className="panel-block px-4">
+            #${hd}: &nbsp;<strong>${$$q(sel).value}</strong>
+          </span>
+          `
+				}
+			}
+
+			const getRadioValue = (na) => {
+				let ret = ''
+
+				$$na(na).forEach((elm) => {
+					if (elm.checked) {
+						ret = elm.value
+					}
+				})
+				return ret
+			}
+		</script>
+	</body>
+</html>

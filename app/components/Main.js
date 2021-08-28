@@ -21,6 +21,7 @@ import About from './N/About'
 
 // React
 import Rform from './R/Rform'
+import Eform from './R/Eform'
 
 // Hooks
 import Memo from './H/Memo'
@@ -55,6 +56,7 @@ function Main() {
 								<Route path="/About" component={About} />
 
 								<Route path="/Rform" component={Rform} />
+								<Route path="/Eform" component={Eform} />
 								
 								<Route path="/Memo" component={Memo} />
 								<Route path="/UseMemo" component={UseMemo} />

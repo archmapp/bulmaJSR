@@ -79,15 +79,18 @@ function Nav() {
 							</NavLink>
 							<div className="navbar-item has-dropdown is-hoverable">
 								<a href="#0" className="navbar-link">
-									React
+									フォーム
 								</a>
 								<ul className="navbar-dropdown is-boxed">
 									<NavLink to="/Rform" className="navbar-item">
-										フォーム react-hook-form
+										react-hook-form
+									</NavLink>
+									<NavLink to="/Eform" className="navbar-item">
+										Bulma Extensions
+										<div className="is-divider mt-3 mb-0" data-content=""></div>
 									</NavLink>
 									<NavLink to="/UseMemo" className="navbar-item">
 										UseMemo
-										<div className="is-divider mt-3 mb-0" data-content=""></div>
 									</NavLink>
 									<NavLink to="/Callback_memo" className="navbar-item">
 										Callback_memo

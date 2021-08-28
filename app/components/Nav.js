@@ -87,6 +87,9 @@ function Nav() {
 									</NavLink>
 									<NavLink to="/Eform" className="navbar-item">
 										Bulma Extensions
+									</NavLink>
+									<NavLink to="/Sform" className="navbar-item">
+										Bulma Ext shortJS.js
 										<div className="is-divider mt-3 mb-0" data-content=""></div>
 									</NavLink>
 									<NavLink to="/UseMemo" className="navbar-item">

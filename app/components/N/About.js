@@ -22,7 +22,7 @@ function About() {
 										<h1 className="panel-block subtitle has-background-info-light">
 											team:&nbsp;&nbsp;
 											<span
-												className="has-text-weight-bold has-text-black-ter"
+												className="t-s has-text-weight-bold has-text-black-ter"
 												style={{ transform: 'skewX(-15deg)' }}
 											>
 												アーキエムアップ
@@ -44,7 +44,7 @@ function About() {
 											サービス
 										</h1>
 									</li>
-									<li className="iken has-text-weight-bold has-text-primary-dark is-size-4 my-0 ml-5 pt-2">
+									<li className="wf-notosansjapanese has-text-weight-bold has-text-primary-dark is-size-4 my-0 ml-5 pt-2">
 										ソフトウェア
 										<span className="is-size-5 has-text-black"> ・ </span>
 										WEBアプリ{' '}
@@ -115,7 +115,7 @@ function About() {
 										</h1>
 									</li>
 									<li className="my-0 ml-5 pt-2">
-										<span className="iken is-size-4 has-text-weight-bold has-text-warning-dark">
+										<span className="wf-notosansjapanese is-size-4 has-text-weight-bold has-text-warning-dark">
 											FLEXBOX 練習帳
 										</span>
 										<span className="is-size-6 ml-6">
@@ -139,7 +139,7 @@ function About() {
 										</h1>
 									</li>
 									<li className="my-0 ml-5 pt-2">
-										<span className="iken is-size-4 has-text-weight-bold has-text-info-dark">
+										<span className="wf-notosansjapanese is-size-4 has-text-weight-bold has-text-info-dark">
 											Tilesの自動生成
 										</span>
 										<span className="is-size-6 ml-6">
@@ -163,10 +163,10 @@ function About() {
 
 								<ul className="panel is-flex is-justify-content-center is-align-content-center">
 									<li>
-										<h1 className="panel-block subtitle has-background-info-light my-3">
+										<h1 className="panel-block subtitle has-background-info-light mt-2">
 											team:&nbsp;&nbsp;
 											<span
-												className="has-text-weight-bold has-text-black-ter"
+												className="t-s has-text-weight-bold has-text-black-ter"
 												style={{ transform: 'skewX(-15deg)' }}
 											>
 												アーキエムアップ
@@ -174,7 +174,7 @@ function About() {
 										</h1>
 									</li>
 									<li>
-										<h1 className="panel-block subtitle has-background-success-light ml-6 my-3">
+										<h1 className="wf-notosansjapanese is-size-6 panel-block subtitle has-background-success-light ml-6 my-3">
 											全てに感謝！　💞💕
 										</h1>
 									</li>

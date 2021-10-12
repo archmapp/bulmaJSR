@@ -1,0 +1,10 @@
+https://googlefonts.github.io/japanese/
+
+Noto Sans JP
+ 
+Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. This is the Sans Japanese family. It has Regular and Bold styles and is hinted.
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+.wf-notosansjapanese { font-family: "Noto Sans JP"; }
+
+

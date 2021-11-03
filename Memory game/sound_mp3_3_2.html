@@ -1,0 +1,47 @@
+<!-- https://webukatu.com/wordpress/blog/11055/ -->
+
+<!-- audio要素をJavaScript内で取得・操作するサンプルコードです。 -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Test</title>
+	</head>
+
+	<body>
+		<audio src="./mp3/システム29.mp3" id="music" controls></audio>
+		<!-- <audio src="./music.mp3" id="music" controls muted></audio> -->
+
+		<div>
+			<button onclick="defaultMuted()">初期音量</button>
+			<button onclick="controls_true()">UI表示</button>
+			<button onclick="controls_false()">UI非表示</button>
+		</div>
+
+		<script language="javascript" type="text/javascript">
+			var music = document.getElementById('music') //audio要素とIDから紐づけ
+			music.volume = 0.5 //音量の初期値(50%)
+
+			function defaultMuted() {
+				//初期音量の確認
+				if (music.defaultMuted) {
+					alert('初期音量はミュートです') //audio要素でmuted属性を付与しているため基本はこっち
+				} else {
+					alert('初期音量はミュートではありません') //audio要素のmuted属性を外すとこっち
+				}
+			}
+
+			function controls_true() {
+				//UI表示
+				music.controls = true
+			}
+
+			function controls_false() {
+				//UI非表示
+				music.controls = false
+			}
+		</script>
+	</body>
+</html>
+

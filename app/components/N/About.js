@@ -84,6 +84,7 @@ function About() {
 									</li>
 								</ul>
 
+								{/* C:\Users\Owner\Desktop\Nodejs\mean\BradWebpack\BRAD_react-sass-webpack\2 route slide\app\ */}
 								<ul className="panel">
 									<li>
 										<h1 className="panel-block subtitle has-background-warning-light">

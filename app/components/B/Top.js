@@ -3,8 +3,7 @@ import React from 'react'
 import Hero from '../Utils/Hero'
 
 function Top() {
-
-  function CC({ __html }) {
+	function CC({ __html }) {
 		return <div dangerouslySetInnerHTML={{ __html }}></div>
 	}
 
@@ -12,7 +11,7 @@ function Top() {
 		<>
 			<article className="message is-primary pt-6 pb-5" id="b-r">
 				<Hero />
-				<nav className="my-2 mx-6 px-2 pt-2">
+				<nav className="my-2 mx-6 px-2 pt-6">
 					<ul>
 						<li>
 							<div className="is-inline-block mb-2">
@@ -32,11 +31,12 @@ function Top() {
 							</div>
 						</li>
 						{/* <div className="my-2 mx-6 px-2 pt-4"> */}
-						<li className="my-2 pt-6">
+						<li className="my-5 pt-4 pb-6">
 							・ お知らせ：　
 							<span
 								className="iken has-tooltip-top has-tooltip-danger has-text-info is-size-4 is-size-5-mobile"
 								data-tooltip="予定価格とモデルから、素早く一般工事費を推定するWEBアプリ"
+								style={{ cursor: 'auto' }}
 							>
 								i入札(建築編)
 							</span>
@@ -44,28 +44,33 @@ function Top() {
 								href="https://safe-peak-55766.herokuapp.com/"
 								className="has-text-grey has-text-weight-semibold"
 							>
-								【 入札アプリ（建築編）】
+								【 入札アプリ（建築編）】 は、
+								<span className="has-text-weight-semibold has-text-info">
+									移転
+								</span>
 							</a>
-							は、
-							<span className="has-text-weight-semibold has-text-info">
-								移転
-							</span>
 							しました。
 						</li>
 					</ul>
+
+					<article className="panel is-primary">
+						<p className="panel-heading">第二版・Bulmaと共に！</p>
+
+						<div className="panel-block is-flex is-justify-content-center">
+							<div className="box notification has-background-white-ter py-4 mx-6">
+								<h3 className="subtitle is-size-5">
+									<div className="has-text-centered is-size-7-mobile">
+										<p>公開日：2021/07/07</p>
+									</div>
+								</h3>
+								<div className="subtitle has-text-centered is-size-7-mobile has-text-primary-dark has-text-weight-semibold">
+									完了予定日：2021/11/25
+								</div>
+							</div>
+						</div>
+					</article>
 				</nav>
 				<hr />
-
-				<div className="box notification has-background-white-ter py-4 mx-6">
-					<h3 className="subtitle is-size-5">
-						<div className="has-text-centered is-size-7-mobile">
-							<p>公開日：2021/07/07</p>
-						</div>
-					</h3>
-					<div className="subtitle has-text-centered is-size-7-mobile has-text-primary-dark has-text-weight-semibold">
-						完了予定日：2021/11/25
-					</div>
-				</div>
 			</article>
 
 			<section className="section">

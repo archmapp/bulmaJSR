@@ -59,12 +59,12 @@ function Main() {
 								<Route path="/Rform" component={Rform} />
 								<Route path="/Eform" component={Eform} />
 								<Route path="/Sform" component={Sform} />
-								
+
 								<Route path="/Memo" component={Memo} />
 								<Route path="/UseMemo" component={UseMemo} />
 								<Route path="/Callback_memo" component={Callback_memo} />
 								<Route path="/CUseMemo" component={CUseMemo} />
-								
+
 								<Route component={Top} className="" />
 							</Switch>
 							{/* </SlideRoutes> */}

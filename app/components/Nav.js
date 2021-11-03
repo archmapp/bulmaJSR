@@ -62,7 +62,7 @@ function Nav() {
 								<span>Bulma</span>
 							</a>
 						</div>
-						<div className="navbar-end has-text-dark px-4">
+						<div className="navbar-end has-text-dark px-4 is-flex is-align-items-center">
 							<NavLink
 								to="/NshortJS"
 								className="navbar-item"
@@ -131,6 +131,16 @@ function Nav() {
 							>
 								About
 							</NavLink>
+
+							<button
+								className="button is-info is-outlined has-tooltip-bottom has-tooltip-warning ml-2"
+								data-tooltip="活動・紹介へ"
+								onClick={() =>
+									window.open('https://archmapp.github.io/about2/')
+								}
+							>
+								About2
+							</button>
 						</div>
 						{/* bulma-pageloader/ in bulma-extensions.min.css */}
 						<div id="selTrgt" className="pageloader" style={{ opacity: 0.4 }}>

@@ -1,0 +1,387 @@
+<!-- https://www.blog.duomly.com/how-to-build-company-website-with-bulma-css/ -->
+<!-- https://www.youtube.com/watch?v=hiTxsjxHIMY -->
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Company website with Bulma</title>
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.8.1/darkly/bulmaswatch.min.css"
+		/> -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+		/>
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/js/bulma-extensions.min.js"></script> -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css"
+		/>
+		<!-- <link rel="stylesheet" href="./css/index.css" /> -->
+		<link rel="stylesheet" href="styles/css/style.css" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			href="./img/faviconBulma.png"
+			sizes="16x16"
+		/>
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+		></script>
+	</head>
+
+	<body class="has-background-info-light" style="width: 90%; margin: 0 auto">
+		<header class="section Light-Blue-900 py-3 has-text-white">
+			<div class="container">
+				<div class="columns is-mobile">
+					<div class="column is-6 h-arch">
+						<a
+							class="has-text-primary-light is-flex is-align-items-center"
+							href="https://www.archmapp.tech/"
+							><img src="./img/faviconBulma.png" alt="" />&nbsp; archmapp</a
+						>
+					</div>
+					<div class="column has-text-right is-size-4">
+						<span class="ts">アーキエムアップのご紹介</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="section" id="hero">
+			<div class="container">
+				<nav
+					class="navbar is-transparent"
+					role="navigation"
+					aria-label="main navigation"
+				>
+					<div style="display: inline-block;"
+						class="navbar-brand pl-5 has-tooltip-top has-tooltip-warning"
+						data-tooltip="Bulmaホーム へ"
+					>
+						<a class="navbar-item" href="https://bulma.io">
+							<img src="./img/bulma-logo900.png" width="112" height="28" />
+						</a>
+						<!-- <a
+							role="button"
+							class="navbar-burger burger has-text-white"
+							aria-label="menu"
+							aria-expanded="false"
+							data-target="navbarBasicExample"
+						>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</a> -->
+					</div>
+
+					<div id="navbarMisc" class="navbar-menu ml-6">
+						<div class="navbar-start">
+							<a class="navbar-item has-text-white"> Flexbox </a>
+
+							<a class="navbar-item has-text-white"> Grid </a>
+							<a class="navbar-item has-text-white"> Bulma </a>
+						</div>
+
+						<div class="navbar-end pr-5">
+							<a class="navbar-item has-text-white"> Javascript </a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="columns ml-6 pt-3 pb-0">
+				<div class="column mt-3 has-text-white">
+					<span class="icon has-text-warning">
+						<i class="far fa-chart-bar fa-lg"></i>
+					</span>
+					<h1 class="ms2 is-size-3 has-text-weight-semibold">人材教育</h1>
+					<div class="ms5 is-size-5">
+						<h2 class="ml-3">プログラマー</h2>
+						<h2 class="ml-3">フロントエンドエンジニア</h2>
+						<h2 class="ml-3">フルスタックエンジニア</h2>
+						<h2 class="mt-6 ml-3">
+							<span class="tag is-danger is-medium mb-1">WEBアプリの開発</span>
+						</h2>
+						<p class="ml-6">共に学び、 楽しく習得</p>
+					</div>
+				</div>
+				<div class="column mt-6 is-flex is-justify-content-center">
+					<img class="laptop" src="img/laptop.svg" />
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container has-text-centered">
+				<div class="columns pt-6 is-vcentered Light-Blue-700 mt-2 px-3">
+					<div class="column">
+						<div class="card">
+							<div class="card-content Light-Blue-50">
+								<div class="has-text-centered">
+									<span class="icon is-size-2 py-4 my-3">
+										<i class="fas fa-code has-text-grey-light"></i>
+									</span>
+								</div>
+								<p class="title is-size-6">Webアプリ</p>
+								<div class="content">Javascript<br />HTML<br />CSS</div>
+							</div>
+							<footer class="card-footer">
+								<span
+									class="
+										card-footer-item
+										has-text-black
+										is-flex is-align-items-center
+									"
+									><img
+										src="./img/faviconBulma.png"
+										alt=""
+									/>&nbsp;archmapp</span
+								>
+							</footer>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card">
+							<div class="card-content Light-Blue-50">
+								<div class="has-text-centered">
+									<span
+										is-flex
+										is-align-items-center
+										class="icon is-size-2 py-4 my-3"
+									>
+										<i class="fas fa-server has-text-black-ter"></i>
+									</span>
+								</div>
+								<p class="title is-size-6">フレームワーク・<br />ライブラリ</p>
+								<div class="content">React<br />Angular<br />Typescript</div>
+							</div>
+							<footer class="card-footer">
+								<span
+									class="
+										card-footer-item
+										has-text-black
+										is-flex is-align-items-center
+									"
+									><img
+										src="./img/faviconBulma.png"
+										alt=""
+									/>&nbsp;archmapp</span
+								>
+							</footer>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card">
+							<div class="card-content Light-Blue-50">
+								<div class="has-text-centered">
+									<span class="icon is-size-2 py-4 my-3">
+										<i class="fas fa-paint-brush has-text-grey"></i>
+									</span>
+								</div>
+								<p class="title is-size-6">効率化</p>
+								<div class="content">webpack<br />Sass<br />Bulma</div>
+							</div>
+							<footer class="card-footer">
+								<span
+									class="
+										card-footer-item
+										has-text-black
+										is-flex is-align-items-center
+									"
+									><img
+										src="./img/faviconBulma.png"
+										alt=""
+									/>&nbsp;archmapp</span
+								>
+							</footer>
+						</div>
+					</div>
+				</div>
+				<div class="columns pt-6 pb-4 is-vcentered Light-Blue-600 px-3">
+					<div class="column is-3">
+						<div class="card">
+							<div class="card-content Light-Blue-50">
+								<div class="has-text-centered">
+									<span class="icon is-size-2 py-4 my-3">
+										<i class="fas fa-seedling lightcoral"></i>
+									</span>
+								</div>
+								<p class="title is-size-6">関連項目</p>
+								<div class="content">
+									Mean Stack<br />Mern Stack<br />
+									Express<br />MongoDB
+								</div>
+							</div>
+							<footer class="card-footer">
+								<span
+									class="
+										card-footer-item
+										has-text-black
+										is-flex is-align-items-center
+									"
+									><img
+										src="./img/faviconBulma.png"
+										alt=""
+									/>&nbsp;archmapp</span
+								>
+							</footer>
+						</div>
+					</div>
+					<div class="column is-5">
+						<div class="card">
+							<div class="card-content Light-Blue-50">
+								<div class="has-text-centered">
+									<span class="icon is-size-2 py-4 my-3">
+										<i class="fas fa-users Light-Green-700T"></i>
+									</span>
+								</div>
+								<p class="title is-size-6">エンジニア</p>
+								<div class="content">
+									<span class="has-text-grey-darker has-text-weight-medium"
+										>Front-end engineer</span
+									><br /><small>フロントエンドエンジニア</small>
+									<p class="mt-1">
+										<span class="has-text-grey-darker has-text-weight-medium"
+											>Full-Stack Developer</span
+										><br /><small>フルスタックディベロッパー</small>
+									</p>
+								</div>
+							</div>
+							<footer class="card-footer">
+								<span
+									class="
+										card-footer-item
+										has-text-black
+										is-flex is-align-items-center
+									"
+									><img
+										src="./img/faviconBulma.png"
+										alt=""
+									/>&nbsp;archmapp</span
+								>
+							</footer>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="card">
+							<div class="card-content Light-Blue-50">
+								<div class="has-text-centered">
+									<span class="icon is-size-2 py-4 my-3">
+										<i class="fas fa-funnel-dollar goldenrod"></i>
+									</span>
+								</div>
+								<p class="title is-size-6">サービス</p>
+								<div class="content">
+									プログラマー<br />の<br />育成・教育！
+								</div>
+							</div>
+							<footer class="card-footer">
+								<span
+									class="
+										card-footer-item
+										has-text-black
+										is-flex is-align-items-center
+									"
+									><img
+										src="./img/faviconBulma.png"
+										alt=""
+									/>&nbsp;archmapp</span
+								>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="contact">
+			<div class="container">
+				<div class="columns is-nogap">
+					<div class="column is-6">
+						<div class="card mb-5">
+							<header class="card-header has-background-info">
+								<p class="card-header-title">コンタクト</p>
+							</header>
+							<div
+								class="card-content has-background-info-light has-text-centered"
+							>
+								<i class="fas fa-envelope-square"></i>
+								<span class="has-text-black has-background-info-light"
+									>&nbsp;archmapp@i.softbank.jp</span
+								>
+							</div>
+						</div>
+						<div class="is-flex is-flex-direction-column is-align-items-center">
+							<span
+								class="
+									pl-3
+									is-flex is-align-items-center
+									has-text-primary-light
+								"
+							>
+								<img
+									src="./img/faviconBulma.png"
+									alt=""
+								/>&nbsp;&nbsp;webページ</span
+							>
+							<p class="pt-2 is-size-5 has-text-weight-bold">
+								<a
+									class="has-text-primary-light"
+									href="https://www.archmapp.tech/"
+									>https://www.archmapp.tech/</a
+								>
+							</p>
+						</div>
+					</div>
+					<div class="column is-6 has-text-white pt-4 pr-6 has-text-right">
+						<p>アーキエムアップ</p>
+						<p class="pt-1 is-size-7">
+							チーム：&nbsp;<span class="has-text-weight-bold pt-1 is-size-4"
+								>archmapp</span
+							>
+						</p>
+						<p class="pt-1 is-size-6">北九州, Japan</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// @media screen and (max-width: 780px) と同じ
+				let mql = window.matchMedia('screen and (max-width: 1023px)')
+				const ms2 = document.querySelector('.ms2')
+				const ms5 = document.querySelector('.ms5')
+
+				function checkBreakPoint(mql) {
+					if (mql.matches) {
+						// スマホ向け
+						ms2.classList.add('is-size-4')
+						ms5.classList.add('is-size-7')
+					} else {
+						// PC向け
+						// is-size-5
+						ms2.classList.remove('is-size-4')
+						ms5.classList.remove('is-size-7')
+					}
+				}
+
+				// ブレイクポイントの瞬間に発火
+				mql.addListener(checkBreakPoint)
+
+				// 初回チェック
+				// checkBreakPoint(mql)
+			})
+		</script>
+	</body>
+</html>

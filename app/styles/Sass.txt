@@ -50,6 +50,10 @@ Sassの!defaultフラグの使い方と使われ方
 
       sass-convert -F sass -T scss . . -R
 
+
+      sass-convert -F sass -T scss sass scss -R
+      sass-convert -F sass -T scss sass scss -R
+
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       bulmaライブラリの変換（取り合えず勉強用❣）
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

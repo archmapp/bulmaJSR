@@ -1,0 +1,18 @@
+
+Tree Shaking は モジュール の形式が ES Modules（import/export 文）であれば利用できます。
+
+lodash-es は ES Modules で書かれているため、次のよう
+ように import文を記述すれば Tree Shaking が有効になります。
+    import { upperCase } from 'lodash-es';
+
+    const text = upperCase('hello webpack app');
+    console.log(text);
+  Tree Shaking が正常に動作すれば、lodash-es のupperCaseだけを読み込み、それ以外の不要なコードは除去されます。
+
+
+Tree Shaking されていないファイルを出力する src/js/app.js を次のように変更すれば、lodash-es 全体が読み込まれるため、Tree Shaking されなくなります。
+   import _ from 'lodash-es';
+
+
+前述の通り ES Modules 形式ではないモジュールやimport文の書き方によっては Tree Shaking されないため、ご注意ください。
+

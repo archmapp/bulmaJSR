@@ -15,24 +15,23 @@ function Top() {
 					<ul>
 						<li>
 							<div className="is-inline-block mb-2">
-								・【{' '}
+								・【
 								<span className="has-text-primary-dark is-size-5 has-text-weight-semibold">
 									<span className="is-size-6">初回</span>・Bulmaと共に！
 								</span>
 								】&nbsp;は、
 								<a href="https://archmapp2.github.io/bulmaJS/">【こちら】</a>
 							</div>
-							<br />
-							<div className="has-text-primary-dark is-size-5 has-text-weight-semibold has-text-centered">
-								[ using Bulma ]
-							</div>
-							<div className="has-text-dark is-size-5 has-text-centered">
-								Let's try Javascript with Bulma
-							</div>
+							<p className="has-text-primary-dark is-size-5 has-text-weight-semibold has-text-centered">
+								[ using Bulma ]&nbsp;
+								<span className="has-text-dark is-size-6 has-text-centered">
+									Let's try Javascript with Bulma
+								</span>
+							</p>
 						</li>
 						{/* <div className="my-2 mx-6 px-2 pt-4"> */}
 						<li className="my-5 pt-4 pb-6">
-							・ お知らせ：　
+							・ <span className="is-size-7 has-text-black">お知らせ：</span>　
 							<span
 								className="iken has-tooltip-top has-tooltip-danger has-text-info is-size-4 is-size-5-mobile"
 								data-tooltip="予定価格とモデルから、素早く一般工事費を推定するWEBアプリ"
@@ -57,29 +56,75 @@ function Top() {
 						<p className="panel-heading">第二版・Bulmaと共に！</p>
 
 						<div className="panel-block is-flex is-justify-content-center">
-							<div className="box notification has-background-white-ter py-4 mx-6">
-								<h3 className="subtitle is-size-5">
-									<div className="has-text-centered is-size-7-mobile">
-										<p>公開日：2021/07/07</p>
+							<div className="box notification has-background-white-ter py-3 my-3 mx-2">
+								<h3 className="subtitle is-size-5 mb-3">
+									<div className="has-text-centered is-size-6-mobile f-size">
+										<p className="f-size">公開日：2021/07/07</p>
 									</div>
 								</h3>
-								<div className="subtitle has-text-centered is-size-7-mobile has-text-primary-dark has-text-weight-semibold">
-									完了予定日：2021/11/25
+								<div className="subtitle has-text-centered is-size-6-mobile has-text-primary-dark has-text-weight-semibold">
+									<p className="f-size">完了予定日：2021/12/25</p>
 								</div>
 							</div>
+						</div>
+					</article>
+
+					<article className="panel is-info mt-6">
+						<p className="panel-heading">WEBアプリの紹介</p>
+
+						<div className="panel-block is-flex is-justify-content-center">
+							<article className="message is-primary mb-0">
+								<div className="message-header mt-3 pb-1">
+									<p>リンク先</p>
+								</div>
+								<div className="message-body is-size-6 py-2 px-0">
+									<table className="table is-hoverable is-size-7-mobile">
+										<tbody className="f-size">
+											<tr>
+												<th className="has-text-right">
+													<a href="https://affectionate-wozniak-de01a2.netlify.app/">
+														初めての【 けいさん 】
+													</a>
+												</th>
+												<td className="td_flex-direction">だれでもできる</td>
+											</tr>
+											<tr>
+												<th className="has-text-right">
+													しんけいすいじゃく・作成中
+												</th>
+												<td className="td_width">忍者トランプ</td>
+											</tr>
+											<tr>
+												<th className="has-text-right">
+													<a href="https://elastic-goldwasser-3e6b83.netlify.app/">
+														一発勝負 <span style={{ color: 'red' }}>❣</span>
+													</a>
+												</th>
+												<td className="td_boxes">記憶ゲーム</td>
+												{/* <th className="has-text-right">
+													<a href="https://archmapp.github.io/ippatsu/">
+														一発勝負 <span style={{ color: 'red' }}>❣</span>
+													</a>
+												</th>
+												<td className="td_boxes">記憶ゲーム</td> */}
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</article>
 						</div>
 					</article>
 				</nav>
 				<hr />
 			</article>
-
+			{/* 
 			<section className="section">
 				<div className="container">
 					<div className="columns is-centered">
 						<div className="column is-10"></div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 		</>
 	)
 }

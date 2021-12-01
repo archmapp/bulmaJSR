@@ -30,10 +30,16 @@ import UseMemo from './H/UseMemo'
 import Callback_memo from './H/Callback_memo'
 import CUseMemo from './H/CUseMemo'
 
+// import styles from './Main.css'
+import styles from './Main.module.css'
+
+console.log(styles)
 function Main() {
 	return (
 		<>
-			<main className="main pt-0 is-flex-grow-1">
+			<main className="pt-0 is-flex-grow-1">
+				<p className={styles.hello}>hello</p>
+				<p className="hello2">hell2</p>
 				<div className="container">
 					<div className="columns is-centered">
 						<div className="column is-size-6 pt-0">

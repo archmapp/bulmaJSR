@@ -20,7 +20,7 @@ function Hero() {
 							~~ Bulmaホームページの流れに沿って ~~
 						</h2>
 						<h3 className="subtitle has-text-white is-5">
-							using [ Bulma & React ] 　v.2
+							using [ Bulma & React ]　ver.2
 						</h3>
 					</div>
 				</div>

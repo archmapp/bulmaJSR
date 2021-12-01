@@ -5,7 +5,6 @@
 @import './bulma-tooltip.min.css';
 @import './bulma-badge.min.css';
 
-
 // @import '../../node_modules/bulma-extensions/bulma-tagsinput/dist/css/bulma-tagsinput.min.css';
 // @import '../../node_modules/bulma-extensions/bulma-badge/dist/css/bulma-badge.min.css';
 
@@ -14,6 +13,7 @@
 	color: white;
 	min-width: 112px;
 	width: 125px;
+	height: 100%;
 	/* flex: 1; */
 }
 
@@ -33,9 +33,13 @@ body {
 		'ＭＳ 明朝', serif;
 }
 
-.t-s {text-shadow: 1px 2px 3px #808080; }
+.t-s {
+	text-shadow: 1px 2px 3px #808080;
+}
 
-.wf-notosansjapanese { font-family: "Noto Sans JP"; }
+.wf-notosansjapanese {
+	font-family: 'Noto Sans JP';
+}
 
 .overlay {
 	position: fixed;
@@ -66,12 +70,13 @@ body.overlay-is-open .overlay,
 }
 
 .e {
-  // color: pink;
+	// color: pink;
 	color: #f84316;
 }
 
-.e::before, .e::before {
-  content: "　";
+.e::before,
+.e::before {
+	content: '　';
 }
 
 label {
@@ -79,4 +84,10 @@ label {
 	margin-top: 7px;
 	margin-bottom: 2px;
 	font-size: 0.8rem;
+}
+
+@media screen and (max-width: 550px) {
+	.f-size {
+		font-size: 0.7rem;
+	}
 }

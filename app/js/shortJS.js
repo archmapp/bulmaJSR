@@ -237,3 +237,25 @@ export const codeSA = (sel) => {
 		// 		}[match]
 		// 	})
 		// }
+
+	// 未入力有り
+	// const lengthE = (fs) => {
+	// 	return fs.map((f) => f.trim() === '').includes(true)
+	// }
+
+	// const lengthR2 = fs => {
+	// 	let b = fs.reduce((state, input) => {return (state |= input.trim()==='')}, false)
+	// 	return b ? false : true
+
+	// const lengthR = (fs) => {
+	// 	let ss = fs
+	// 		.map((f) => f.trim())
+	// 		.reduce((state, input) => (state += input), '')
+	// 	return ss === '' ? false : true
+	// }
+
+	// const length = (fs) => {
+	// 	let ss = ''
+	// 	fs.forEach((f) => (ss += f.trim()))
+	// 	return ss === '' ? false : true
+	// }

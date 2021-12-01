@@ -1,0 +1,92 @@
+https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
+
+
+How to Handle Routing Using HashRouter
+
+  GitHub Pages does not support browser history like your browser does. In our case, the route https://tomerpacific.github.io/starter-project/about doesn't help GitHub Pages understand where to point the user (since it is a frontend route).
+  To overcome this problem, we need to use a Hash Router instead of a Browser Router in our application. This type of router uses the hash portion of the URL to keep the UI in sync with the URL.
+
+        ReactDOM.render(
+          <React.StrictMode>
+            <HashRouter>
+              <App />
+            </HashRouter>
+          </React.StrictMode>,
+          document.getElementById('root')
+        );
+(参考)　https://create-react-app.dev/docs/deployment/#github-pages-https-pagesgithubcom
+
+      Deployment
+
+
+
+https://dev-yakuza.posstree.com/react/github-pages/
+
+[React] GitHub Pagesにデプロイ
+create-react-appで作ったReactプロジェクトをGitHub Pagesにデプロイしてみましょう。
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+buildコマンドで生成されたbuildフォルダをGitHubにアップロードする必要があります。.gitignoreファイルを開いて下記のように修正します。
+
+  # production
+  # /build
+
+GitHub Pagesは特定なBranchを使って静的なファイルをサービスします。したがってbuildフォルダのためだけのBranchを作る必要があります。次のコマンドを実行してbuildフォルダだけ新しいBranchにアップロードします。
+
+  git subtree push --prefix build/ origin gh-pages
+
+GitHubは基本的にgh-pagesの名前のBranchをGitHub Pages用で認識します。したがって、gh-pagesのBranchでbuildフォルダをアップロードしたら、特に設定することがありません。
+
+[問題解決]
+create-react-appとreact-routerで作成したReactプロジェクトをGitHub Pagesでサービスするためにはいくつかの問題を解決する必要があります。
+
+PUBLIC_URL
+----------
+create-react-appで開発したReactプロジェクトは基本的ルート(/)URLを基準にしてプロジェクトを生成します。しかし、私たちがアップロードしたGitHub PagesはURLにリポジトリの名前を持ってます。したがって、ReactプロジェクトにルートのURLではなくリポジトリの名前を持つURLを使えるように修正する必要があります。
+
+まず、./package.jsonファイルを開いて下記のようにhomepageを追加します。
+
+{
+  ...,
+  "homepage": "https://dev-yakuza-org.github.io/todo"
+}
+homepageに追加したURLはGitHub PagesのフールURLで最後の/を消したURLを入力します。
+
+そしてreact-routerのBrowserRouterを使う部分を探して下記のように修正します。私は./src/index.tsxファイルでBrowserRouterを使ってます。
+
+...
+import { BrowserRouter as Router } from 'react-router-dom';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Router basename={process.env.PUBLIC_URL}>
+      <App />
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
+...
+BrowserRouterのbasenameにPUBLIC_URLを設定します。ここで設定したPUBLIC_URLはpackage.jsonに設定したURLが適用されます。
+
+
+404ページ
+ReactはSPA(Single Page Application)で、1つのページ(index.html)を使って全てのページをサービスします。したがって、Reactプロジェクトをデプロイしたら、全てのURLがindex.htmlページに移動するようにする必要があります。しかし、GitHub Pagesにはそのような機能がありません。
+
+この問題を解決するためには少しトリックを使う必要があります。GitHub Pagesで間違ったURLを入力する場合、全て404ページが表示されます。GitHub Pagesではこの404ページをカスタム化することができます。これを使うと1つのページを使えるようにすることができます。
+
+そしたら、この問題を解決するため./build/index.htmlファイルをコピーして./build/404.htmlファイルを生成します。そしてこのようにコピーしたファイルをGitHub Pagesにデプロイします。
+
+このようにGitHub Pagesにデプロイにデプロイすると、GitHub PagesのルートURLにアクセスすると、./build/index.htmlファイルが開くようになって、私たちが期待する動きをしてくれます。もし、ルートURLではなく他のURLに接続すると、ページが存在しないので./build/404.htmlファイルが開きます。しかし、404.htmlのページ内容はindex.htmlと同じなので、私たちが設定した動きを実行するようになります。
+
+これを自動化するため、./package.jsonファイルを開いて下記のように修正します。
+
+...
+"scripts": {
+  ...
+  "build": "react-scripts build",
+  "postbuild": "cp build/index.html build/404.html",
+  ...
+},
+...
+このようにスクリプトを修正すると、ビルドが終わった後、index.htmlファイルをコピーして404.htmlページを生成するようになります。
+
+create-react-appとreact-routerで作られたReactプロジェクトをGItHub Pagesにデプロイする方法

@@ -33,7 +33,7 @@ import CUseMemo from './H/CUseMemo'
 function Main() {
 	return (
 		<>
-			<main className="main pt-0 is-flex-grow-1">
+			<main className="pt-0 is-flex-grow-1">
 				<div className="container">
 					<div className="columns is-centered">
 						<div className="column is-size-6 pt-0">

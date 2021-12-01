@@ -1,0 +1,102 @@
+https://qiita.com/ShinKano/items/541050c36e08e78a5176
+ウェブで開発する場合はreact-router-domを、
+アプリで開発する場合はreact-router-nativeを使います。
+
+<BrowserRouter>について
+React Routerは<BrowserRouter>か<HashRouter>というコンポーネントを使います。
+前者はHTML5のhistory APIを使っており、後者はwindow.locationを利用しています。
+古いブラウザもサポートしなければならない場合は、後者を利用する必要があります。
+
+前者のhistoryオブジェクトはルーティング先のコンポーネントでpropsとして受け取ることができます。
+historyプロパティについて
+Routerに紐づけられたコンポーネントには、historyというプロパティが自動的に付与されます。
+ブラウザの検証ツールでも確認できます
+
+historyオブジェクトはルーティング先のコンポーネントでpropsとして受け取ることができます。
+
+props.history.push()メソッドについて
+子コンポーネントからルーティングにアクセスしたいときに使います。
+props.history.push(`/store/123`); //引数はルートからのパス
+
+
+
+https://www.subarunari.com/entry/ReactRouterNavbar
+Webアプリ向けには、BrowserRouter と HashRouter が提供されています。ネイティブアプリであれば、NativeRouter があります。
+BrowserRouterはHTML5の history API をサポートしているブラウザで使用可能です。レガシーなブラウザをサポートしたい場合はHashRouterを利用します。また、公式ドキュメントには静的ファイルだけを提供するような場合も HashRouter が良いと書かれています。
+
+リンクを生成できるコンポーネントには、 Link と NavLink があります。
+NavLinkは、「リンクのURLと現在のURLが同じ場合に見た目を変える」ということが簡単に実現できます。下記のように、activeClassName や activeStyle に値を指定するだけです。
+
+<NavLink to='/test' className='test' style={{fontSize: '1rem'}} activeClassName='active' activeStyle={{color: 'red'}} />
+
+
+
+https://code-ship-blog.wemotion.co.jp/technology/react-js%E3%81%A7%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AEreact-router%E3%81%AE%E7%B4%B9%E4%BB%8B/
+SPAではページ内でDOMを色々変更したとしてもURLは変わりません。
+ルーティングによりURLで画面を指定する(DOMの状態を保存する)ことができます。
+
+これにより、ページ遷移や共有がスムーズに行えるようになります。
+このような理由からSPAであってもルーティングを使っているアプリケーションが多いです。
+
+routerのコンポーネントは他にも<HashRouter />があります。
+
+これはURL Hashというhttp://example.com/#/your/pageのように#を使用したURLでサーバーへのリクエストを行わないものを利用したルーティングに使用できます。
+
+<NavLink />
+<NavLink />は<Link />と機能は似ていますが、<Link />にURLに応じた装飾をつけることができます。
+
+
+
+https://ueqareer.net/2568
+BrowserRouterはブラウザ上でのルーティング時に、StaticRouterはサーバーサイドレンダリング時に使われます。
+
+静的ページでルーティングするには、HashRouterを使います。
+    <HashRouter>
+      <Switch>
+        <Route exact path="/about" component={AboutComponent} />
+        <Route path="/" component={IndexComponent} />
+      </Switch>
+    </HashRouter>
+このようにRouteを設定すると
+    indexページのurlは/#/、
+    aboutページのurlは/#/about
+となります。コード自体はBrowserRouterと同じように書けるのでとくに迷うことはありません。
+
+注意
+HashRouterはlocation.keyとlocation.stateをサポートしていません。そのため、location.keyなどを使用しない環境下でのみHashRouterが使えます。
+
+これでGitHubのような静的ページでもreact-routerのHashRouterを使ってルーティングができるようになりました。
+
+
+
+https://ja.visual-foxpro-programmer.com/difference-between-browserrouter
+react-routerでのbrowserRouterとhashRouterの違い
+Difference Between Browserrouter
+
+2つの最大の違いは、hashRouterがlocation.keyとlocation.stateをサポートしていないことです。
+
+
+
+https://blog.kazu69.net/2017/08/10/using-react-router-v4/
+アプリケーションに動的なURIが含まれる場合は BrowserRouterを利用する。こちらはbrowserのHistory APIをサポートしている。
+HashRouter はwindow.location.hashを使ってルーティングと同期している。
+
+
+
+
+https://the2g.com/post/quickly-learn-react-router-v4
+props
+上記の例でも定義していますが、レンダリングする関数はReact Routerのpropsを受け取ります（クラスの場合はthis.props）。これには以下のオブジェクトが格納されています。
+
+match（pathに一致したURL情報）
+location（主に現在のロケーション情報）
+history（ルーティングした過去の履歴情報）
+尚、propsはrenderに限らず、componentやchildrenでも取得可能です。
+
+
+
+https://zenn.dev/h_yoshikawa0724/articles/2020-09-22-react-router
+BrowserRouter：HTML の History API（pushState、replaceState、popstate イベント）を使用して UI を URL と同期させるルーター
+HashRouter：URL のハッシュ部分（window.location.hash）を使用して UI を URL と同期させるルーター
+StaticRouter：location を変更しないルーター
+MemoryRouter：URL の履歴

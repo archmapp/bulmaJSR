@@ -1,3 +1,5 @@
+第二版・Bulmaと共に！
+
 https://github.com/archmapp/bulmaJSR
 
 https://gracious-carson-8848e2.netlify.app

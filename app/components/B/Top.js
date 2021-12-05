@@ -90,7 +90,9 @@ function Top() {
 											</tr>
 											<tr>
 												<th className="has-text-right">
-													しんけいすいじゃく・作成中
+													<a href="https://jolly-lamport-67e201.netlify.app">
+														しんけいすいじゃく
+													</a>
 												</th>
 												<td className="td_width">忍者トランプ</td>
 											</tr>
@@ -101,12 +103,6 @@ function Top() {
 													</a>
 												</th>
 												<td className="td_boxes">記憶ゲーム</td>
-												{/* <th className="has-text-right">
-													<a href="https://archmapp.github.io/ippatsu/">
-														一発勝負 <span style={{ color: 'red' }}>❣</span>
-													</a>
-												</th>
-												<td className="td_boxes">記憶ゲーム</td> */}
 											</tr>
 										</tbody>
 									</table>

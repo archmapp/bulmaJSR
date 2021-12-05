@@ -112,6 +112,64 @@ function About() {
 								<ul className="panel">
 									<li>
 										<h1 className="panel-block subtitle has-background-warning-light">
+											しんけいすいじゃく
+										</h1>
+									</li>
+									<li className="my-0 ml-5 pt-2">
+										<span className="iken is-size-4 has-text-weight-bold has-text-danger-dark">
+											忍者トランプ
+										</span>
+										<span className="is-size-6 ml-6">Shaun　~~ 忍者 ~~</span>
+									</li>
+									<li className="ml-5 py-2">
+										<a
+											href="https://jolly-lamport-67e201.netlify.app"
+											className="ml-3"
+										>
+											URL：https://jolly-lamport-67e201.netlify.app
+										</a>
+									</li>
+									<li className="ml-5 py-2">
+										<a
+											href="https://www.youtube.com/watch?v=ZCKohZwGZMw&list=PL4cUxeGkcC9iQ7g2eoNXHCJBBBz40S_Lm&index=1"
+											className="ml-3"
+										>
+											ShaunのYouTube講座：ww.youtube.com
+										</a>
+									</li>
+								</ul>
+
+								<ul className="panel">
+									<li>
+										<h1 className="panel-block subtitle has-background-warning-light">
+											ランダムカード<span className="is-size-6">と</span>
+											パレットカード&nbsp;
+											<span style={{ color: 'red' }}>❣</span>
+										</h1>
+									</li>
+									<li className="my-0 ml-5 pt-2">
+										<span className="iken is-size-4 has-text-weight-bold has-text-danger-dark">
+											一発勝負<span style={{ color: 'red' }}>❣</span>
+										</span>
+										<span className="is-size-6 ml-6">
+											記憶ゲーム　　~~ ８枚のカードを記憶 ~~
+										</span>
+									</li>
+									<li className="ml-5 py-2">
+										<a href="https://elastic-goldwasser-3e6b83.netlify.app">
+											URL：https://elastic-goldwasser-3e6b83.netlify.app
+										</a>
+									</li>
+									{/* <li className="ml-5 py-2">
+										<a href="https://archmapp.github.io/ippatsu/">
+											URL：https://archmapp.github.io/ippatsu/
+										</a>
+									</li> */}
+								</ul>
+
+								<ul className="panel">
+									<li>
+										<h1 className="panel-block subtitle has-background-warning-light">
 											FLEXBOX を体験
 										</h1>
 									</li>

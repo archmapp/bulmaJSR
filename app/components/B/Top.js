@@ -72,7 +72,7 @@ function Top() {
 					<article className="panel is-info mt-6">
 						<p className="panel-heading">WEBアプリの紹介</p>
 
-						<div className="panel-block is-flex is-justify-content-center">
+						<div className="panel-block is-flex is-flex-direction-column is-justify-content-center">
 							<article className="message is-primary mb-0">
 								<div className="message-header mt-3 pb-1">
 									<p>リンク先</p>
@@ -110,6 +110,38 @@ function Top() {
 											</tr>
 										</tbody>
 									</table>
+								</div>
+
+								<div
+									className="
+									box
+									has-background-danger-light has-text-primary-dark
+									is-size-4
+									py-3
+									mx-0
+									my-2
+								"
+									style={{ lineHeight: '2rem', display: 'block' }}
+								>
+									<nav className="level">
+										<div className="level-item">
+											<button
+												type="button"
+												className="
+												button
+												has-text-light has-background-warning-dark
+												is-medium
+											"
+												onClick={() =>
+													window.open(
+														'https://archmapp2.github.io/bulmaJS/src/sub/flex/Diagram.html'
+													)
+												}
+											>
+												FLEXBOX 練習帳
+											</button>
+										</div>
+									</nav>
 								</div>
 							</article>
 						</div>

@@ -45,6 +45,14 @@ C:\Users\Owner\Desktop\Nodejs\ReactN\Ninja\public\index.html
 https://jolly-lamport-67e201.netlify.app/
 記憶ゲーム しんけいすいじゃく react Bulma 忍者
 https://github.com/archmapp/memory-game.git
+  npm run build
+  npm run netlify-prod ... 重要 Publish directory: build
+
+
+C:\Users\Owner\Desktop\Nodejs\React\game\Space-Game-master
+いん石を狙え
+Website URL: https://flashcard2.netlify.app
+
 
 
 

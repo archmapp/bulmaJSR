@@ -156,15 +156,35 @@ function About() {
 										</span>
 									</li>
 									<li className="ml-5 py-2">
-										<a href="https://elastic-goldwasser-3e6b83.netlify.app">
-											URL：https://elastic-goldwasser-3e6b83.netlify.app
+										<a href="https://flashcard2.netlify.app">
+											URL：https://flashcard2.netlify.app
 										</a>
 									</li>
-									{/* <li className="ml-5 py-2">
-										<a href="https://archmapp.github.io/ippatsu/">
-											URL：https://archmapp.github.io/ippatsu/
+								</ul>
+
+								<ul className="panel">
+									<li>
+										<h1 className="panel-block subtitle has-background-warning-light">
+											いん石を狙え <span style={{ color: 'red' }}>❣</span>　{' '}
+											<span className="is-size-6">タブレット以上</span>
+										</h1>
+									</li>
+									<li className="my-0 ml-5 pt-2">
+										<span className="iken is-size-4 has-text-weight-bold has-text-danger-dark">
+											宇宙の旅<span style={{ color: 'red' }}>❣</span>
+										</span>
+										<span className="is-size-6 ml-6">
+											矢印キー(← →)&nbsp;と&nbsp;[スペース]キーだけを使って
+										</span>
+									</li>
+									<li className="ml-6 py-2">
+										　　　　　　　　　~~ シューティングゲーム ~~
+									</li>
+									<li className="ml-5 py-2">
+										<a href="https://space-game2.netlify.app">
+											URL：https://space-game2.netlify.app
 										</a>
-									</li> */}
+									</li>
 								</ul>
 
 								<ul className="panel">

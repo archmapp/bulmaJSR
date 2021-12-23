@@ -98,11 +98,17 @@ function Top() {
 											</tr>
 											<tr>
 												<th className="has-text-right">
-													<a href="https://flashcard2.netlify.app">
-														一発勝負 <span style={{ color: 'red' }}>❣</span>
-													</a>
+													<a href="https://flashcard2.netlify.app">一発勝負</a>
 												</th>
 												<td className="td_boxes">記憶ゲーム</td>
+											</tr>
+											<tr>
+												<th className="has-text-right">
+													<a href="https://space-game2.netlify.app">
+														いん石を狙え
+													</a>
+												</th>
+												<td className="td_boxes">宇宙の旅</td>
 											</tr>
 										</tbody>
 									</table>

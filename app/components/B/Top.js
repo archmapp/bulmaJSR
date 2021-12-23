@@ -98,13 +98,9 @@ function Top() {
 											</tr>
 											<tr>
 												<th className="has-text-right">
-													<a href="https://archmapp.github.io/ippatsu/">
+													<a href="https://flashcard2.netlify.app">
 														一発勝負 <span style={{ color: 'red' }}>❣</span>
 													</a>
-													{/* https://flashcard2.netlify.app
-													<a href="https://elastic-goldwasser-3e6b83.netlify.app/">
-														一発勝負 <span style={{ color: 'red' }}>❣</span>
-													</a> */}
 												</th>
 												<td className="td_boxes">記憶ゲーム</td>
 											</tr>

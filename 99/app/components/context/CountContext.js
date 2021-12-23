@@ -20,5 +20,6 @@ export function CountProvider({ children }) {
 		setCount,
 		countDown,
 	}
+	
 	return <CountContext.Provider value={value}>{children}</CountContext.Provider>
 }

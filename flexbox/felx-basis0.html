@@ -1,0 +1,35 @@
+<!-- https://aprico-media.com/posts/4496 -->
+<!-- 
+なぜwidthプロパティと酷似しているflex-basisプロパティが用意されているのかと言うと、flex-grow・flex-shrinkプロパティの設定値によっては、widthプロパティが正常に動作しないからです。 -->
+<!-- フレックス要素の幅指定ではwidthプロパティではなくflex-basisプロパティを使用することで、意図しない幅になってしまう問題に遭遇しなくなります -->
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+
+		<style>
+			ul {
+				display: flex;
+				padding: 0;
+				background-color: #ccc;
+				list-style: none;
+				/* width: 500px; */
+			}
+
+			li {
+				padding: 10px;
+				margin: 5px;
+				background-color: #31a9ee;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul>
+			<li>flex-basis１です。</li>
+			<li>flex-basis２です。</li>
+			<li>flex-basis３です。ZZZZZZZZZZZ</li>
+		</ul>
+	</body>
+</html>

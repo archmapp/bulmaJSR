@@ -107,6 +107,106 @@ const $$oes = (o, f) => {
 	o.addEventListener('submit', f)
 }
 
+
+// media
+const $$set_mql = (screenCheck, ...x) => {
+	let mql
+	let firstF = true
+	const iw = window.innerWidth
+
+	for (let i = 0; i <= x.length - 1; i++) {
+		mql = window.matchMedia(`(max-width: ${x[i]}px)`)
+		console.log("i:", i)
+		// mql.addEventListener('change', screenCheck, false)
+		$$doe(mql, screenCheck, 'change')
+		if ((iw < x[i] || i === x.length - 1) && firstF) {
+			screenCheck(mql)
+			firstF = false
+			console.log('i::', i)
+		}
+	}
+}
+
+/*
+		// (max-width: 768px)  (max-width: 1024px)
+		// MediaQueryList, MediaQueryListEvent
+		function screenCheck(m) {
+			// console.log(m) // 87
+			// const mm = m.media.match(/[0-9]+/g)
+			// x1 = +mm[0]
+			const iw = window.innerWidth
+			// document.documentElement.clientWidth
+
+			// blue: default
+			if (m.matches) {
+				// max型のときは、こちらはｎ個
+
+				para.textContent = `(max-width: ${iw}px)`
+				// max-widthのときは、↓この順序
+				if (iw <= 500) {
+					// console.log(window.innerWidth)
+					document.body.style.backgroundColor = 'red'
+					document.body.style.fontSize = '0.3rem'
+					return
+				}
+				if (iw <= 768) {
+					document.body.style.backgroundColor = 'green'
+					document.body.style.fontSize = '0.6rem'
+					$$qcL('.trgt', 'trans', 'remove')
+					return
+				}
+				if (iw <= 900) {
+					document.body.style.backgroundColor = 'yellow'
+					document.body.style.fontSize = '1rem'
+					console.log($$q('.trgt'))
+					// alert($$q('.toggle').textContent)
+					$$qcL('.trgt', 'trans', 'add')
+					return
+				}
+				if (iw < 1024) {
+					document.body.style.backgroundColor = 'blue'
+					document.body.style.fontSize = '2rem'
+					$$qcL('.trgt', 'trans', 'remove')
+					return
+				}
+				console.log('screenCheck between')
+			} else {
+				// max型のときは、こちらはｎ+1個
+				para.textContent = `(${iw}px < innerWidth)`
+				if (1024 < iw) {
+					document.body.style.backgroundColor = 'pink'
+					document.body.style.fontSize = '2rem'
+					return
+				}
+				if (900 <= iw) {
+					document.body.style.backgroundColor = 'blue'
+					document.body.style.fontSize = '2rem'
+					$$qcL('.trgt', 'trans', 'remove')
+					return
+				}
+				if (768 <= iw) {
+					document.body.style.backgroundColor = 'yellow'
+					document.body.style.fontSize = '1rem'
+					$$qcL('.trgt', 'trans', 'add')
+					return
+				}
+				if (500 <= iw) {
+					document.body.style.backgroundColor = 'green'
+					document.body.style.fontSize = '0.6rem'
+					$$qcL('.trgt', 'trans', 'remove')
+					return
+				}
+
+				document.body.style.backgroundColor = 'red'
+				document.body.style.fontSize = '0.3rem'
+			}
+		}
+
+		// max型でn=４個
+		$$set_mql(screenCheck, 500, 768, 900, 1024)
+
+*/
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //  <template> 要素は、そのHTMLTemplateElement.contentプロパティにDocumentFragmentを含みます。
 

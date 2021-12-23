@@ -1,0 +1,74 @@
+<!-- https://qiita.com/recordare/items/43fc6ae10f35652c6cb5 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			.root {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.item,
+			.adjuster {
+				/* flex-basis: 100px; */
+				flex: calc(25% - 10px);
+				/* flex-basis: calc(25% - 10px); */
+				/* width: 100px; */
+				/* flex-grow: 1; */
+				flex-shrink: 0;
+				margin-left: 10px;
+			}
+
+			.item {
+				height: 50px;
+				margin-top: 10px;
+			}
+
+			.item:nth-of-type(4n) {
+				background-color: lime;
+			}
+
+			.item:nth-of-type(4n+1) {
+				background-color: red;
+			}
+
+			.item:nth-of-type(4n+2) {
+				background-color: yellow;
+			}
+
+			.item:nth-of-type(4n+3) {
+				background-color: blue;
+			}
+
+			.adjuster {
+				/* height: 0; */
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="root">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+			<div class="item">6</div>
+			<div class="item">7</div>
+			<div class="item">8</div>
+			<div class="item">9</div>
+			<div class="item">10</div>
+			<div class="item">11</div>
+			<div class="adjuster"></div>
+			<div class="adjuster"></div>
+			<div class="adjuster"></div>
+			<div class="adjuster"></div>
+		</div>
+	</body>
+</html>

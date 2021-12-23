@@ -149,7 +149,7 @@ function About() {
 									</li>
 									<li className="my-0 ml-5 pt-2">
 										<span className="iken is-size-4 has-text-weight-bold has-text-danger-dark">
-											一発勝負<span style={{ color: 'red' }}>❣</span>
+											一発勝負
 										</span>
 										<span className="is-size-6 ml-6">
 											記憶ゲーム　　~~ ８枚のカードを記憶 ~~
@@ -165,13 +165,13 @@ function About() {
 								<ul className="panel">
 									<li>
 										<h1 className="panel-block subtitle has-background-warning-light">
-											いん石を狙え <span style={{ color: 'red' }}>❣</span>　{' '}
+											いん石を狙え&nbsp;<span style={{ color: 'red' }}>❣</span>　{' '}
 											<span className="is-size-6">タブレット以上</span>
 										</h1>
 									</li>
 									<li className="my-0 ml-5 pt-2">
 										<span className="iken is-size-4 has-text-weight-bold has-text-danger-dark">
-											宇宙の旅<span style={{ color: 'red' }}>❣</span>
+											宇宙の旅
 										</span>
 										<span className="is-size-6 ml-6">
 											矢印キー(← →)&nbsp;と&nbsp;[スペース]キーだけを使って

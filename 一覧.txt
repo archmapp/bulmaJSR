@@ -8,7 +8,7 @@ Bulma入門 javascript Handlebars Electron Angular React
 
 
 
-C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\1\app\index.html
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\app\index.html
 https://www.archmapp.tech/
 第二版・Bulmaと共に！
 Bulma・React入門 javascript
@@ -29,11 +29,11 @@ https://www.archmapp.tech/
 https://github.com/archmapp/hajimeteno-keisan.git
 
 
-C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard\public\index.html
+✖　C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard\public\index.html
 ✖　https://archmapp.github.io/ippatsu/
 ✖　github(https://archmapp.github.io/ippatsu/)
-一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
-https://github.com/archmapp/ippatsu.git
+✖　一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
+✖　https://github.com/archmapp/ippatsu.git
 
 C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard_Netlify2\public\index.html
 https://flashcard2.netlify.app
@@ -52,6 +52,16 @@ https://github.com/archmapp/memory-game.git
 C:\Users\Owner\Desktop\Nodejs\React\game\Space-Game-master
 いん石を狙え
 Website URL: https://flashcard2.netlify.app
+
+太陽系
+https://archmapp.github.io/html/
+https://archmapp.github.io/html/%E5%A4%AA%E9%99%BD%E7%B3%BB2.html
+https://archmapp.github.io/html/太陽系2.html
+  git remote -v
+  origin  https://github.com/archmapp/html.git (fetch)
+  origin  https://github.com/archmapp/html.git (push)
+
+
 
 
 

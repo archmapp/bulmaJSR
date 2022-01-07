@@ -335,8 +335,13 @@ function Components() {
 										>
 											{/* <div className="modal is-active"> */}
 											<div className="modal-background"></div>
-											<div className="modal-content">
-												<div className="box has-text-centered">Hello 💕</div>
+											<div
+												className="modal-content"
+												onClick={(e) => {
+													e.stopPropagation()
+												}}
+											>
+												<div className="box has-text-centered py-6">Hello 💕</div>
 											</div>
 											<button
 												className="modal-close is-large"
@@ -605,4 +610,4 @@ function Components() {
 }
 
 export default Components
-Components
+

@@ -81,7 +81,7 @@ function Top() {
 									</div>
 								</h3>
 								<div className="subtitle has-text-centered is-size-6-mobile has-text-primary-dark has-text-weight-semibold">
-									<p className="f-size">更新日：2022/01/07</p>
+									<p className="f-size">更新日：2022/01/15</p>
 								</div>
 							</div>
 						</div>

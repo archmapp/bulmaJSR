@@ -36,7 +36,6 @@ const $$qecL = (sel, selT, cN = 'is-active', mN = 'toggle') => {
 }
 
 const $$qe = (sel, f, evNa = 'click') => {
-	// console.log('$$qe', sel);
 	$$oe($$q(sel), f, evNa)
 }
 
@@ -118,7 +117,9 @@ const $$set_mql = (screenCheck, ...x) => {
 		mql = window.matchMedia(`(max-width: ${x[i]}px)`)
 		console.log("i:", i)
 		// mql.addEventListener('change', screenCheck, false)
-		$$doe(mql, screenCheck, 'change')
+		// mql.addEventListener( screenCheck )
+		mql.addListener( screenCheck )
+		// $$doe(mql, screenCheck, 'change')
 		if ((iw < x[i] || i === x.length - 1) && firstF) {
 			screenCheck(mql)
 			firstF = false

@@ -200,7 +200,7 @@ export const codeSA = (sel) => {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   export const scrTT = (sel) =>
-		$$.q(sel).scrollIntoView({
+		q(sel).scrollIntoView({
 			behavior: 'smooth',
 			block: 'start',
 		})

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Hero() {
-	return (
+  return (
 		<>
 			<div className="hero is-primary is-bold">
 				<div className="hero-body">

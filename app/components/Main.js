@@ -17,6 +17,7 @@ import Extensions from './B/Extensions'
 // Nav
 import NshortJS from './N/NshortJS'
 import Nreact from './N/Nreact'
+import Nreact2 from './N/Nreact2'
 import About from './N/About'
 
 // React
@@ -54,6 +55,7 @@ function Main() {
 
 								<Route path="/NshortJS" component={NshortJS} />
 								<Route path="/Nreact" component={Nreact} />
+								<Route path="/Nreact2" component={Nreact2} />
 								<Route path="/About" component={About} />
 
 								<Route path="/Rform" component={Rform} />

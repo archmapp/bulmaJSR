@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Hero from '../utils/Hero'
-// import Hero from '../utils/Hero'
+import Hero from '../Utils/Hero'
 
 function Top() {
 	function CC({ __html }) {
@@ -32,11 +31,7 @@ function Top() {
 						</li>
 						{/* <div className="my-2 mx-6 px-2 pt-4"> */}
 						<li className="my-5 pt-4 pb-6">
-							・{' '}
-							<span className="is-size-7 has-text-black has-text-weight-medium">
-								お知らせ：
-							</span>
-							　
+							・ <span className="is-size-7 has-text-black">お知らせ：</span>　
 							<span
 								className="iken has-tooltip-top has-tooltip-danger has-text-info is-size-4 is-size-5-mobile"
 								data-tooltip="予定価格とモデルから、素早く一般工事費を推定するWEBアプリ"
@@ -44,29 +39,16 @@ function Top() {
 							>
 								i入札(建築編)
 							</span>
-							【 入札アプリ（建築編）】
-							<span className="has-text-weight-semibold has-text-info">
-								終了
-							</span>
-							<h2
-								className="is-size-6 has-text-centered mt-3"
-								style={{ lineHeight: '1.7rem' }}
+							<a
+								href="https://safe-peak-55766.herokuapp.com/"
+								className="has-text-grey has-text-weight-semibold"
 							>
+								【 入札アプリ（建築編）】 は、
 								<span className="has-text-weight-semibold has-text-info">
-									入札アプリ（建築編）
+									移転
 								</span>
-								は、2022/02/02 を持ちまして
-								<br />
-								<span className="has-text-weight-semibold">
-									<span className="has-text-weight-semibold has-text-info">
-										管理・提供
-									</span>
-								</span>
-								&nbsp;を終了することになりました。
-							</h2>
-							<h2 className="is-size-6 has-text-centered mt-3">
-								ご利用ありがとうございました。
-							</h2>
+							</a>
+							しました。
 						</li>
 					</ul>
 
@@ -81,7 +63,7 @@ function Top() {
 									</div>
 								</h3>
 								<div className="subtitle has-text-centered is-size-6-mobile has-text-primary-dark has-text-weight-semibold">
-									<p className="f-size">更新日：2022/01/07</p>
+									<p className="f-size">更新日：2021/12/25</p>
 								</div>
 							</div>
 						</div>

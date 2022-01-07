@@ -4,11 +4,12 @@ import React, { useEffect } from 'react'
 import contentsCard from './contents/contentsCard'
 import DDmenu from './contents/DDmenu'
 
-import Hero from '../utils/NreactHero'
+import Hero from '../utils/Nreact2Hero'
 // import Hero from '../../utils/Hero'
 
-function Nreact() {
+function Nreact2() {
 	useEffect(() => {
+		
 		$$.qAll('.notification .delete').forEach((o) => {
 			$$.oe(o, () => {
 				o.parentNode.remove()
@@ -66,7 +67,7 @@ function Nreact() {
 									</span>
 									】
 								</a>
-								&nbsp;を構築する過程で学んだ、React・Bulmaでの開発環境のサンプル２つです。
+								&nbsp;を構築する過程で学んだ、React・Bulmaでの開発環境のサンプル２つ目です。
 							</div>
 						</li>
 						<li>
@@ -86,16 +87,17 @@ function Nreact() {
 						</li>
 					</ul>
 					<article className="panel is-info mt-6">
-						<p className="panel-heading">開発環境１の紹介</p>
+						<p className="panel-heading">開発環境２の紹介</p>
 
 						<div className="panel-block is-flex is-flex-direction-column is-justify-content-center">
 							<article className="message is-primary mb-0">
 								<div className="message-header mt-3 pb-1">
-									<p>開発環境１</p>
+									<p>開発環境２</p>
 								</div>
 								<div className="message-body has-background-white is-size-6 py-2 px-6">
 									<ul style={{ listStyle: 'disc' }}>
-										<li className="py-1 has-background-white">
+										<li className="py-1 has-background-white">準備中...</li>
+										{/* <li className="py-1 has-background-white">
 											create-react-app実行後 ejectせず、webpackを使う。
 										</li>
 										<li className="py-1 has-background-white">
@@ -104,7 +106,7 @@ function Nreact() {
 										<li className="py-1 has-background-white">
 											"自作の shortJS をグローバル$$変数に設定する"
 											件を試してみる。
-										</li>
+										</li> */}
 									</ul>
 								</div>
 							</article>
@@ -118,11 +120,12 @@ function Nreact() {
 							<div className="panel-block is-flex is-flex-direction-column is-justify-content-center">
 								<article className="message is-warning mb-0">
 									<div className="message-header mt-3 pb-1">
-										<p>開発環境１</p>
+										<p>開発環境２</p>
 									</div>
 									<div className="message-body has-background-white is-size-6 py-2 px-6">
 										<ul style={{ listStyle: 'disc' }}>
-											<li className="py-1 has-background-white">
+											<li className="py-1 has-background-white">準備中...</li>
+											{/* <li className="py-1 has-background-white">
 												githubページは、
 												<a href="https://github.com/archmapp/react_env1.git">
 													{' '}
@@ -135,7 +138,7 @@ function Nreact() {
 											<li className="py-1 has-background-white">
 												"自作の shortJS をグローバル$$変数に設定する"
 												件を試してみる。
-											</li>
+											</li> */}
 										</ul>
 									</div>
 								</article>
@@ -478,4 +481,4 @@ function Nreact() {
 	)
 }
 
-export default Nreact
+export default Nreact2

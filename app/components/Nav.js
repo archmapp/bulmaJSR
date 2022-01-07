@@ -6,10 +6,10 @@ import { NavLink } from 'react-router-dom'
 function Nav() {
 	useEffect(() => {
 		$$.bulmaMenu('#burger', '#nav-links')
-		$$.qAe('.dd2m a', (e) => {
-			e.preventDefault()
-			$$q('.sel2').innerText = e.target.innerText
-		})
+		// $$.qAe('.dd2m a', (e) => {
+		// 	e.preventDefault()
+		// 	$$.q('.sel2').innerText = e.target.innerText
+		// })
 	}, [])
 
 	const pageLoading = () => {
@@ -72,12 +72,22 @@ function Nav() {
 							</NavLink>
 							<NavLink
 								to="/Nreact"
-								className="navbar-item"
+								className="navbar-item has-tooltip-bottom"
+								data-tooltip="開発環境１"
 								onClick={pageLoading}
 							>
 								React
 							</NavLink>
-							<div className="navbar-item has-dropdown is-hoverable">
+							<NavLink
+								to="/Nreact2"
+								className="navbar-item has-tooltip-bottom"
+								data-tooltip="開発環境２"
+								onClick={pageLoading}
+							>
+								React2
+							</NavLink>
+
+							{/* <div className="navbar-item has-dropdown is-hoverable">
 								<a href="#0" className="navbar-link">
 									フォーム
 								</a>
@@ -102,7 +112,7 @@ function Nav() {
 										CUseMemo
 									</NavLink>
 								</ul>
-							</div>
+							</div> */}
 							{/* <div className="navbar-item has-dropdown is-hoverable">
 								<a href="#0" className="navbar-link">
 									Hooks

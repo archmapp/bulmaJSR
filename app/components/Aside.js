@@ -98,15 +98,6 @@ function Aside() {
 						{/* <hr
 							style={{ width: '80%', backgroundColor: 'white', margin: 'auto' }}
 						/> */}
-						<hr
-							style={{
-								width: '90%',
-								backgroundColor: 'grey',
-								margin: 'auto',
-								marginTop: '12px',
-								height: '1px',
-							}}
-						/>
 						<NavLink
 							to="/Extensions"
 							className="mt-2 mb-0 mx-3 pl-1"

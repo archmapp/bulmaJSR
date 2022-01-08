@@ -124,11 +124,11 @@ export const bulmaMenu = (ss, ssT) => {
 	qecL(ss, ssT)
 	qe('body', (e) => {
 		// bodyをクリックしてメニューを消す
-		e.stopPropagation()
-		if (q(ss).classList.contains('is-active')) {
-			qcL(ss)
-			qcL(ssT)
-		}
+		// e.stopPropagation()
+		// if (q(ss).classList.contains('is-active')) {
+		// 	qcL(ss)
+		// 	qcL(ssT)
+		// }
 	})
 }
 

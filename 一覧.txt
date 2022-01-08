@@ -68,3 +68,8 @@ https://archmapp.github.io/html/太陽系2.html
 
 C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJS\src\sub\flex\Diagram.html
 https://archmapp2.github.io/bulmaJS/src/sub/flex/Diagram.html
+
+https://www.onamae.com/domain/navi/dns_controll/input
+www.archmapp.tech	CNAME	
+3600
+gracious-carson-8848e2.netlify.app

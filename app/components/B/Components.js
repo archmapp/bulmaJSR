@@ -43,7 +43,6 @@ function Components() {
 	return (
 		<>
 			<section className="section">
-				{console.log('return')}
 				<div className="container">
 					<div>
 						<div className="is-size-4 has-text-weight-medium">[Components]</div>

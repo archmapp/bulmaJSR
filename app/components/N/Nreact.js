@@ -5,7 +5,7 @@ import contentsCard from './contents/contentsCard'
 import DDmenu from './contents/DDmenu'
 
 import Hero from '../utils/NreactHero'
-// import Hero from '../../utils/Hero'
+import './Nreact.css'
 
 function Nreact() {
 	useEffect(() => {
@@ -112,7 +112,7 @@ function Nreact() {
 					</article>
 
 					<article className="panel mt-6">
-						<p className="panel-heading">github</p>
+						<p className="panel-heading">github と デモページ</p>
 
 						<div className="panel-block is-flex is-flex-direction-column is-justify-content-center">
 							<div className="panel-block is-flex is-flex-direction-column is-justify-content-center">
@@ -122,19 +122,31 @@ function Nreact() {
 									</div>
 									<div className="message-body has-background-white is-size-6 py-2 px-6">
 										<ul style={{ listStyle: 'disc' }}>
-											<li className="py-1 has-background-white">
-												githubページは、
-												<a href="https://github.com/archmapp/react_env1.git">
-													{' '}
-													こちら{' '}
-												</a>
+											<li className="align-items py-1 has-background-white">
+												<span>githubページは、こちら：</span>
+												<button
+													className="button is-primary"
+													onClick={() =>
+														window.open(
+															'https://github.com/archmapp/react_env1.git'
+														)
+													}
+												>
+													githubページ
+												</button>
 											</li>
-											<li className="py-1 has-background-white">
-												そのため customize-cra, react-app-rewired をインストール
-											</li>
-											<li className="py-1 has-background-white">
-												"自作の shortJS をグローバル$$変数に設定する"
-												件を試してみる。
+											<li className="align-items py-1 has-background-white">
+												<span>デモページが、こちら：　</span>
+												<button
+													className="button is-primary"
+													onClick={() =>
+														window.open(
+															'https://archmapp.github.io/react_env1/'
+														)
+													}
+												>
+													デモ
+												</button>
 											</li>
 										</ul>
 									</div>

@@ -1,0 +1,104 @@
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\netlify.txt
+
+https://bulmajsr.netlify.app
+https://www.archmapp.tech/
+
+[ドメインの設定]
+  お名前.com と Netlify　両方に設定
+
+  お名前.com
+    https://www.onamae.com/domain/navi/dns_manage
+    ネームサーバーの設定
+    DNS設定/転送設定－ドメイン一覧
+    archmapp.techを選択
+    DNSレコード設定を利用する設定する
+      対象ドメイン
+  archmapp.tech
+    登録済み
+A/AAAA/CNAME/MX/NS/TXTレコード
+※デフォルト（ホスト名なし）のNSレコードは削除/変更がおこなえません。
+ホスト名	TYPE	TTL	VALUE	優先	状態	削除
+archmapp.tech	NS	
+86400
+01.dnsv.jp
+
+有効
+
+archmapp.tech	NS	
+86400
+02.dnsv.jp
+
+有効
+
+archmapp.tech	NS	
+86400
+03.dnsv.jp
+
+有効
+
+archmapp.tech	NS	
+86400
+04.dnsv.jp
+
+有効
+
+archmapp.tech	A	
+3600
+104
+.
+198
+.
+14
+.
+52
+
+有効
+
+archmapp.tech	A	
+3600
+75
+.
+2
+.
+60
+.
+5
+
+有効
+
+www.archmapp.tech	CNAME	
+3600
+bulmajsr.netlify.app
+
+有効
+
+～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～～
+
+    "netlify": "netlify deploy",
+    "netlify-prod": "netlify deploy --prod",
+
+
+npm run netlify
+This folder isn't linked to a site yet
+? What would you like to do? +  Create & configure a new site
+? Team: archmapp's team
+Choose a unique site name (e.g. isnt-archmapp-awesome.netlify.app) or leave it blank for a random name. You can update the site name later.
+? Site name (optional): bulmaJSR
+
+Site Created
+
+Admin URL: https://app.netlify.com/sites/bulmaJSR
+URL:       https://bulmaJSR.netlify.app
+Site ID:   277513c1-eee1-47e1-af2c-e8b07d004549
+Please provide a publish directory (e.g. "public" or "dist" or "."):
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR
+
+
+npm run netlify-prod
+? Publish docs
+? Publish directory C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\docs
+Deploy path: C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\docs
+
+
+Unique Deploy URL: https://61d9257c25c84cd0f0882ca8--bulmajsr.netlify.app
+Website URL:       https://bulmajsr.netlify.app

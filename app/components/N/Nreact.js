@@ -7,6 +7,8 @@ import DDmenu from './contents/DDmenu'
 import Hero from '../utils/NreactHero'
 import './Nreact.css'
 
+import Solar from '../../assets/svg/Solar'
+
 function Nreact() {
 	useEffect(() => {
 		$$.qAll('.notification .delete').forEach((o) => {
@@ -105,6 +107,11 @@ function Nreact() {
 											"自作の shortJS をグローバル$$変数に設定する"
 											件を試してみる。
 										</li>
+										<li className="py-1 has-background-white">
+											create-react-appは手軽に使えるので、今後この方法(customize-cra)で
+											<br />
+											どこまでカスタマイズできるか、 追求したい。
+										</li>
 									</ul>
 								</div>
 							</article>
@@ -122,7 +129,7 @@ function Nreact() {
 									</div>
 									<div className="message-body has-background-white is-size-6 py-2 px-6">
 										<ul style={{ listStyle: 'disc' }}>
-											<li className="align-items py-1 has-background-white">
+											<li className="alignItems py-1 has-background-white">
 												<span>githubページは、こちら：</span>
 												<button
 													className="button is-primary"
@@ -135,7 +142,7 @@ function Nreact() {
 													githubページ
 												</button>
 											</li>
-											<li className="align-items py-1 has-background-white">
+											<li className="alignItems py-1 has-background-white">
 												<span>デモページが、こちら：　</span>
 												<button
 													className="button is-primary"
@@ -160,12 +167,18 @@ function Nreact() {
 				<div className="container">
 					<div className="columns is-centered">
 						<div className="column is-10 message">
+							<b className="is-size-5">一服休憩</b>（MDN canvas）
+							<article className="message is-primary my-3 py-5 pl-3" id="b-r">
+								<div className="alignItems2">
+									<Solar />
+								</div>
+							</article>
 							<div className="message-header has-background-grey px-5 py-3 mb-4 is-size-5 has-text-weight-medium">
 								以下は、Bulmaの利用例です。
 							</div>
 							<b className="is-size-5">button</b>
 							<article className="message is-primary my-3 py-5 pl-3" id="b-r">
-								<div className="is-flex is-align-items-center">
+								<div className="alignItems">
 									<button
 										className="button is-primary btn-loading has-tooltip-top has-tooltip-warning"
 										data-tooltip="className='btn-loading'"
@@ -358,7 +371,6 @@ function Nreact() {
 									</div>
 								</div>
 							</article>
-
 							<b className="is-size-5">modal</b>
 							<article
 								className="message is-primary mt-3 mb-6 py-5 pl-3"
@@ -456,7 +468,6 @@ function Nreact() {
 								</div>
 							</nav>
 							{/* </article> */}
-
 							<article
 								className="message has-background-danger-light my-3 py-5 pl-3"
 								id="b-r"
@@ -475,7 +486,6 @@ function Nreact() {
 									</div>
 								</div>
 							</article>
-
 							<button
 								className="button has-background-grey has-text-white-ter is-pulled-right mr-5 mt-3"
 								onClick={() => $$.scrTT('#top')}

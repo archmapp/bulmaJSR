@@ -88,7 +88,9 @@ function Top() {
 					</article>
 
 					<article className="panel is-info mt-6">
-						<p className="panel-heading">WEBアプリの紹介</p>
+						<p className="panel-heading">
+							WEBアプリ <small>(ゲーム) </small>の紹介
+						</p>
 
 						<div className="panel-block is-flex is-flex-direction-column is-justify-content-center">
 							<article className="message is-primary mb-0">
@@ -119,6 +121,14 @@ function Top() {
 													<a href="https://flashcard2.netlify.app">一発勝負</a>
 												</th>
 												<td className="td_boxes">記憶ゲーム</td>
+											</tr>
+											<tr>
+												<th className="has-text-right">
+													<a href="https://archtictactoe.netlify.app">
+														ティック・タック・トゥ
+													</a>
+												</th>
+												<td className="td_boxes">三目並べ</td>
 											</tr>
 											<tr>
 												<th className="has-text-right">

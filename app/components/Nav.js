@@ -87,7 +87,7 @@ function Nav() {
 								React2
 							</NavLink>
 
-							{/* <div className="navbar-item has-dropdown is-hoverable">
+							<div className="navbar-item has-dropdown is-hoverable">
 								<a href="#0" className="navbar-link">
 									フォーム
 								</a>
@@ -112,7 +112,7 @@ function Nav() {
 										CUseMemo
 									</NavLink>
 								</ul>
-							</div> */}
+							</div>
 							{/* <div className="navbar-item has-dropdown is-hoverable">
 								<a href="#0" className="navbar-link">
 									Hooks

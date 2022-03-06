@@ -23,6 +23,10 @@ const $$oe = (o, f, evNa = 'click') => {
 	o.addEventListener(evNa, f)
 }
 
+const $$oeRemove = (o, f, evNa = 'click') => {
+	o.removeEventListener(evNa, f)
+}
+
 const $$dqoe = (sel, f) => {
 	$$de(() => $$qe(sel, f))
 }

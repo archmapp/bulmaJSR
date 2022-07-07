@@ -22,7 +22,10 @@ function QuickView() {
 	return (
 		<>
 			<article>
-				<div className={`quickview ${styles.quickviewS} quickT`}>
+				<div
+					className={`quickview ${styles.quickviewS} quickT`}
+					style={{ overflowY: 'scroll' }}
+				>
 					<div className="box py-2 px-3" style={{ backgroundColor: '#375A7F' }}>
 						<header className="qv_h is-flex is-justify-content-space-between p-2">
 							<p className="is-size-5 has-text-white">ゲーム一覧</p>
@@ -75,11 +78,35 @@ function QuickView() {
 											</tr>
 											<tr>
 												<th className="has-text-right is-flex-grow-3 mr-2">
+													<a href="https://archtictactoe.netlify.app/">
+														ティック・タック・トゥ
+													</a>
+												</th>
+												<td className="is-size-7 is-flex-grow-4">三目並べ</td>
+											</tr>
+											<tr>
+												<th className="has-text-right is-flex-grow-3 mr-2">
 													<a href="https://space-game2.netlify.app">
 														いん石を狙え <span style={{ color: 'red' }}>❣</span>
 													</a>
 												</th>
 												<td className="is-size-7 is-flex-grow-4">宇宙の旅</td>
+											</tr>
+											<tr>
+												<th className="has-text-right is-flex-grow-3 mr-2">
+													<a href="https://nyan-gules.vercel.app/">
+														にゃんにゃん動画
+													</a>
+												</th>
+												<td className="is-size-7 is-flex-grow-4">Next.js 版</td>
+											</tr>
+											<tr>
+												<th className="has-text-right is-flex-grow-3 mr-2">
+													<a href="https://isnt-archmapp-awesome.netlify.app/">
+														にゃんにゃん動画
+													</a>
+												</th>
+												<td className="is-size-7 is-flex-grow-4">旧版</td>
 											</tr>
 										</tbody>
 									</table>

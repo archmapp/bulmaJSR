@@ -6,6 +6,10 @@ import DDmenu from './contents/DDmenu'
 
 import Hero from '../utils/NreactHero'
 import './Nreact.css'
+import Tag from '../../css/bulma-utils/tag'
+import TagM from '../../css/bulma-utils/tagM'
+import Modal from '../../css/bulma-utils/Modal'
+import TtButton from '../../css/bulma-utils/TtButton'
 
 import Solar from '../../assets/svg/Solar'
 
@@ -129,7 +133,7 @@ function Nreact() {
 									</div>
 									<div className="message-body has-background-white is-size-6 py-2 px-6">
 										<ul style={{ listStyle: 'disc' }}>
-											<li className="alignItems py-1 has-background-white">
+											<li className="flexAlign py-1 has-background-white">
 												<span>githubページは、こちら：</span>
 												<button
 													className="button is-primary"
@@ -142,7 +146,7 @@ function Nreact() {
 													githubページ
 												</button>
 											</li>
-											<li className="alignItems py-1 has-background-white">
+											<li className="flexAlign py-1 has-background-white">
 												<span>デモページが、こちら：　</span>
 												<button
 													className="button is-primary"
@@ -162,36 +166,57 @@ function Nreact() {
 						</div>
 					</article>
 				</div>
-			</article>{' '}
+			</article>
+			
 			<section className="section">
 				<div className="container">
 					<div className="columns is-centered">
-						<div className="column is-10 message">
+						<div className="column is-11 message">
 							<b className="is-size-5">一服休憩</b>（MDN canvas）
 							<article className="message is-primary my-3 py-5 pl-3" id="b-r">
-								<div className="alignItems2">
+								<div className="flexCenter">
 									<Solar />
 								</div>
 							</article>
 							<div className="message-header has-background-grey px-5 py-3 mb-4 is-size-5 has-text-weight-medium">
-								以下は、Bulmaの利用例です。
+								以下は、Bulma (Javascript) の利用例です。
 							</div>
 							<b className="is-size-5">button</b>
-							<article className="message is-primary my-3 py-5 pl-3" id="b-r">
-								<div className="alignItems">
-									<button
+							<article
+								className="notification has-background-primary-light is-primary my-3 py-5 pl-3"
+								id="b-r"
+							>
+								{/* <article className="notification is-primary my-3 py-5 pl-3" id="b-r"> */}
+								<div className="flexAlign">
+									<TtButton
+										data="btn-loading"
+										label="Click me"
+										warning=""
+										onClick={() => $$.qcL_T('.btn-loading', 1500, 'is-loading')}
+									></TtButton>
+									{/* <button
 										className="button is-primary btn-loading has-tooltip-top has-tooltip-warning"
 										data-tooltip="className='btn-loading'"
 										onClick={() => $$.qcL_T('.btn-loading', 1500, 'is-loading')}
 									>
 										Click me
-									</button>
+									</button> */}
 									<span className="ml-5">1.5秒間：is-loading</span>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg=".is-loadingクラスのトグルによる on/off"
+									warning="is-danger"
+								></Tag>
+								{/* <TagM
+									hint="ヒント"
+									msg=".is-loadingクラスのトグルによる on/off"
+									warning="is-danger"
+								></TagM> */}
 							</article>
 							<b className="is-size-5">notification</b>
-							<article className="is-primary my-3 py-0 pl-3" id="b-r">
-								<div className="notification has-background-contentsCard-light my-1 py-3">
+							<article className="is-primary my-3 pb-4 pl-3" id="b-r">
+								<div className="notification has-background-danger-light my-1 py-3">
 									<button className="delete"></button>
 									Lorem ipsum A
 								</div>
@@ -203,6 +228,11 @@ function Nreact() {
 									<button className="delete"></button>
 									Lorem ipsum C
 								</div>
+								<Tag
+									hint="ヒント"
+									msg=".deleteクラスのボタンを含む.notification要素の削除"
+									warning="is-danger"
+								></Tag>
 							</article>
 							<b className="is-size-5">progress</b>
 							<article className="message is-primary py-5 pl-3" id="b-r">
@@ -212,7 +242,7 @@ function Nreact() {
 									</span>
 									<progress
 										className="progress is-warning has-tooltip-top has-tooltip-primary"
-										data-tooltip="handleProgress"
+										data-tooltip="value属性"
 										style={{ width: '80%' }}
 										onClick={handleProgress}
 										value="50"
@@ -221,8 +251,14 @@ function Nreact() {
 										100%
 									</progress>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg="progress要素の value属性の削除と設定(0~100)"
+									warning="is-danger"
+								></Tag>
 							</article>
-							<b className="is-size-5">tags</b>
+							field is-grouped &gt; control &gt;
+							<b className="is-size-5">tags has-addons</b> &gt; tag is-delete
 							<article className="message is-primary py-5 pl-3" id="b-r">
 								<div className="field is-grouped is-grouped-multiline mt-3 ml-5">
 									<div className="control">
@@ -232,20 +268,25 @@ function Nreact() {
 										</div>
 									</div>
 
-									<div className="control mx-4">
+									<div className="control mx-3">
 										<div className="tags has-addons">
 											<span className="tag is-link">Web Design</span>
 											<span className="tag is-delete"></span>
 										</div>
 									</div>
 
-									<div className="control">
+									<div className="control mx-3">
 										<div className="tags has-addons">
 											<span className="tag is-link">Open Source</span>
 											<span className="tag is-delete"></span>
 										</div>
 									</div>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg=".tag.is-deleteクラスの親の親の.control要素を削除"
+									warning="is-danger"
+								></Tag>
 							</article>
 							<b className="is-size-5">card</b>
 							<article className="message is-primary my-3 py-5 pl-3" id="b-r">
@@ -284,6 +325,11 @@ function Nreact() {
 										</div>
 									</div>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg=".card-content要素のinnerHTMLを下のボタンに応じて書き換える"
+									warning="is-danger"
+								></Tag>
 							</article>
 							<b className="is-size-5">dropdown</b>
 							<article className="message is-primary my-3 py-5 pl-3" id="b-r">
@@ -319,6 +365,11 @@ function Nreact() {
 										</div>
 									</div>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg="クリックした項目のテキストを取得（e.target.innerText）"
+									warning="is-danger"
+								></Tag>
 							</article>
 							<b className="is-size-5">message</b>
 							<article className="message is-primary my-5">
@@ -327,8 +378,8 @@ function Nreact() {
 								</div>
 
 								<div className="columns is-centered">
-									<div id="message" className="column is-8 content">
-										<div className="message is-info my-5">
+									<div id="message" className="column is-8 pb-0">
+										<div className="message is-info mt-5 mb-5">
 											<div className="message-header">
 												<p>Message header</p>
 												<button className="delete" aria-label="Delete"></button>
@@ -370,6 +421,11 @@ function Nreact() {
 										</div>
 									</div>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg="クリックしたis-deleteボタンの親の親の.message要素を削除"
+									warning="is-danger"
+								></Tag>
 							</article>
 							<b className="is-size-5">modal</b>
 							<article
@@ -390,34 +446,15 @@ function Nreact() {
 											>
 												モーダルを開く
 											</button>
-											<div
-												className="modal"
-												onClick={() => $$.qcL('.modal', 'is-active', 'remove')}
-											>
-												{/* <div className="modal is-active"> */}
-												<div className="modal-background"></div>
-												<div
-													className="modal-content"
-													// style={{ zIndex: 10 }}
-													onClick={(e) => {
-														e.stopPropagation()
-													}}
-												>
-													<div className="box is-size-5 has-text-centered py-6">
-														Hello 💕
-													</div>
-												</div>
-												<button
-													className="modal-close is-large"
-													onClick={() =>
-														$$.qcL('.modal', 'is-active', 'remove')
-													}
-													aria-label="close"
-												></button>
-											</div>
+											<Modal opacity="0.50">Hello 💕 e.stopPropagation()</Modal>
 										</div>
 									</div>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg=".modalモーダル画面のクラス .is-activeのトグルによる on/off"
+									warning="is-danger"
+								></Tag>
 							</article>
 							<b className="is-size-5 mt-6">navbar</b>
 							{/* <article className="message"> */}
@@ -485,6 +522,14 @@ function Nreact() {
 										</div>{' '}
 									</div>
 								</div>
+								<Tag
+									hint="ヒント"
+									msg=".is-activeのトグルによる バーガーメニューの開閉"
+									warning="is-danger"
+								></Tag>
+								<p style={{ marginLeft: '6rem' }}>
+									$$.bulmaMenu('#burger2', '#nav-links2')
+								</p>
 							</article>
 							<button
 								className="button has-background-grey has-text-white-ter is-pulled-right mr-5 mt-3"

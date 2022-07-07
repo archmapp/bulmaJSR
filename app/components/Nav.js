@@ -12,7 +12,8 @@ function Nav() {
 		// })
 	}, [])
 
-	const pageLoading = () => {
+	const pageLoading = (e) => {
+		e.target.blur()
 		$$.qcL_T('#selTrgt')
 	}
 
@@ -30,6 +31,7 @@ function Nav() {
 							exact
 							to="/"
 							id="top"
+							onClick={pageLoading}
 							className="navbar-item has-tooltip-bottom mt-2 mr-5 pb-3"
 							data-tooltip="Top page"
 						>
@@ -78,14 +80,14 @@ function Nav() {
 							>
 								React
 							</NavLink>
-							<NavLink
+							{/* <NavLink
 								to="/Nreact2"
 								className="navbar-item has-tooltip-bottom"
 								data-tooltip="開発環境２"
 								onClick={pageLoading}
 							>
 								React2
-							</NavLink>
+							</NavLink> */}
 
 							<div className="navbar-item has-dropdown is-hoverable">
 								<a href="#0" className="navbar-link">
@@ -145,9 +147,10 @@ function Nav() {
 							<button
 								className="button is-info is-outlined has-tooltip-bottom has-tooltip-warning ml-2"
 								data-tooltip="活動・紹介へ"
-								onClick={() =>
+								onClick={(e) => {
+									e.target.blur()
 									window.open('https://archmapp.github.io/about2/')
-								}
+								}}
 							>
 								About2
 							</button>

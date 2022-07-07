@@ -1,0 +1,18 @@
+.gridCenter {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* place-itemsで justify-itemsとalign-itemsをまとめることができる。 */
+.gridCenter {
+  display: grid;
+  place-items: center;
+}
+
+/* place-contentは justify-contentとalign-contentをまとめることができる。 */
+.gridCenter {
+  display: grid;
+  place-content: center;
+}
+

@@ -1,7 +1,7 @@
 // https://reffect.co.jp/react/react-memo
 // memoではコンポーネントに対して設定を行い、
-// useCallbackでは関数に対して設定を行っていましたが
-// useMemoでは値に対して設定をおこないます。
+// useCallbackでは関数に対して設定を行ないます。
+// 	(useMemoでは値に対して設定)
 
 import React from 'react'
 import { useState, useCallback } from 'react'
@@ -39,8 +39,8 @@ const Memo = () => {
 
 	const completeTodo = (index) => {
 		console.log('Todo', index)
-		let newTodos = todos.map((todo, todoIndex) => {
-			if (todoIndex === index) {
+		let newTodos = todos.map((todo, i) => {
+			if (i === index) {
 				todo.isCompleted = !todo.isCompleted
 			}
 			return todo

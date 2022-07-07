@@ -90,6 +90,21 @@ label {
 	font-size: 0.8rem;
 }
 
+@media screen and (max-width: 1200px) {
+	.f-sizeQ2 {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.f-size {
+		font-size: 0.8rem;
+	}
+	.f-sizeQ2 {
+		font-size: 0.75rem;
+	}
+}
+
 @media screen and (max-width: 550px) {
 	.f-size {
 		font-size: 0.7rem;

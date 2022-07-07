@@ -1,0 +1,64 @@
+<!-- http://geta6.logdown.com/posts/142636-js-before-after -->
+<!-- jsで:before :after疑似要素にアクセスする -->
+<!-- https://www.7-16.co.jp/laboratory/2047 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			body {
+				height: 200vh;
+			}
+			#target:before {
+				display: block;
+				content: attr(data);
+				width: 160px;
+				height: 90px;
+				color: white;
+				background: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="sampleBoxBeforeX-pseudoStyle"></div>
+		<div id="target"></div>
+		<input id="button" type="button" value="click" />
+		<div id="sampleBoxBefore2-pseudoStyle"></div>
+		
+		<script>
+			window.addEventListener('scroll', function () {
+        console.log("🚀pseudo2.html window.pageYOffset", window.pageYOffset)
+				pseudo(
+					'sampleBoxBefore2',
+					"#sampleBox2::before{content:'→この文字列はjavascriptで作ったbeforeコンテンツです。スクロール量は" +
+						window.pageYOffset +
+    						"です。'}"
+				)
+			})
+
+			function pseudo(id, css) {
+				id = id + '-pseudoStyle'
+				var element = document.getElementById(id)
+				if (element == null) {
+					styleTag = document.createElement('style')
+					styleTag.id = id
+					styleTag.innerHTML = css
+					document.getElementsByTagName('head')[0].appendChild(styleTag)
+				} else {
+					element.innerHTML = css
+				}
+			}
+
+			pseudo(
+				'sampleBoxBeforeX',
+				"#sampleBoxBeforeX-pseudoStyle::before {content:'→この文字列はjavascriptで作ったbeforeコンテンツです'}"
+			)
+		</script>
+	</body>
+</html>

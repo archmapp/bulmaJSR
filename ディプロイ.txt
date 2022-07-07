@@ -1,0 +1,22 @@
+npm run build
+npm run netlify-prod
+  ? Publish directory docs
+～～～
+
+Unique Deploy URL: 
+https://622456d9d9b8df1caff0742a--bulmajsr.netlify.app        
+Website URL:       https://www.archmapp.tech
+
+
+
+
+
+✖
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR>
+  npm run build
+  git add . 
+  git commit -m "tic tac toe"
+  git push origin main
+
+～～～
+https://www.archmapp.tech/#/

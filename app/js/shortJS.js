@@ -19,6 +19,11 @@ export const de = (f) => {
 	document.addEventListener('DOMContentLoaded', f)
 }
 
+// export const deR = (f) => {
+// 	document.removeEventListener('DOMContentLoaded', f)
+// }
+// export const deRemove = deR
+
 export const oe = (o, f, evNa = 'click') => {
 	o.addEventListener(evNa, f)
 }
@@ -26,6 +31,7 @@ export const oe = (o, f, evNa = 'click') => {
 export const oeRemove = (o, f, evNa = 'click') => {
 	o.removeEventListener(evNa, f)
 }
+export const oeR = oeRemove
 
 export const dqoe = (sel, f) => {
 	de(() => qe(sel, f))
@@ -42,6 +48,11 @@ export const qecL = (sel, selT, cN = 'is-active', mN = 'toggle') => {
 export const qe = (sel, f, evNa = 'click') => {
 	oe(q(sel), f, evNa)
 }
+
+export const qeRemove = (sel, f, evNa = 'click') => {
+	oeR(q(sel), f, evNa)
+}
+export const qeR = qeRemove
 
 export const doe = (o, f) => {
 	de(() => oe(o, f))
@@ -76,8 +87,12 @@ export const qcL = (sel, cN = 'is-active', mN = 'toggle') =>
 
 /* bulma-pageloader/ in bulma-extensions.min.css */
 export const qcL_T = (sel, t = 1000, cN = 'is-active', mN = 'toggle') => {
-	q(sel).classList[mN](cN)
-	setTimeout(() => q(sel).classList[mN](cN), t)
+	const qs = q(sel)
+	qs.classList[mN](cN)
+	setTimeout(() => {
+		qs.blur()
+		qs.classList[mN](cN)
+	}, t)
 }
 
 export const ocL = (o, cN = 'is-active', mN = 'toggle') => o.classList[mN](cN)
@@ -105,7 +120,6 @@ export const ocLm = (
 	})
 }
 export const ocLmethod = ocLm
-
 
 export const oAcLm = (
 	o,
@@ -207,63 +221,62 @@ export const codeSA = (sel) => {
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  export const scrTT = (sel) =>
-		q(sel).scrollIntoView({
-			behavior: 'smooth',
-			block: 'start',
-		})
+export const scrTT = (sel) =>
+	q(sel).scrollIntoView({
+		behavior: 'smooth',
+		block: 'start',
+	})
 
-  export const escape_html = (string) =>{
-		if (typeof string !== 'string') {
-			return string
-		}
-		return string.replace(/[&'`"<>]/g, function (match) {
-			return {
-				'&': '&amp;',
-				"'": '&#x27;',
-				'`': '&#x60;',
-				'"': '&quot;',
-				'<': '&lt;',
-				'>': '&gt;',
-			}[match]
-		})
+export const escape_html = (string) => {
+	if (typeof string !== 'string') {
+		return string
 	}
+	return string.replace(/[&'`"<>]/g, function (match) {
+		return {
+			'&': '&amp;',
+			"'": '&#x27;',
+			'`': '&#x60;',
+			'"': '&quot;',
+			'<': '&lt;',
+			'>': '&gt;',
+		}[match]
+	})
+}
 
+// function escape_html(string) {
+// 	if (typeof string !== 'string') {
+// 		return string
+// 	}
+// 	return string.replace(/[&'`"<>]/g, function (match) {
+// 		return {
+// 			'&': '&amp;',
+// 			"'": '&#x27;',
+// 			'`': '&#x60;',
+// 			'"': '&quot;',
+// 			'<': '&lt;',
+// 			'>': '&gt;',
+// 		}[match]
+// 	})
+// }
 
-		// function escape_html(string) {
-		// 	if (typeof string !== 'string') {
-		// 		return string
-		// 	}
-		// 	return string.replace(/[&'`"<>]/g, function (match) {
-		// 		return {
-		// 			'&': '&amp;',
-		// 			"'": '&#x27;',
-		// 			'`': '&#x60;',
-		// 			'"': '&quot;',
-		// 			'<': '&lt;',
-		// 			'>': '&gt;',
-		// 		}[match]
-		// 	})
-		// }
+// 未入力有り
+// const lengthE = (fs) => {
+// 	return fs.map((f) => f.trim() === '').includes(true)
+// }
 
-	// 未入力有り
-	// const lengthE = (fs) => {
-	// 	return fs.map((f) => f.trim() === '').includes(true)
-	// }
+// const lengthR2 = fs => {
+// 	let b = fs.reduce((state, input) => {return (state |= input.trim()==='')}, false)
+// 	return b ? false : true
 
-	// const lengthR2 = fs => {
-	// 	let b = fs.reduce((state, input) => {return (state |= input.trim()==='')}, false)
-	// 	return b ? false : true
+// const lengthR = (fs) => {
+// 	let ss = fs
+// 		.map((f) => f.trim())
+// 		.reduce((state, input) => (state += input), '')
+// 	return ss === '' ? false : true
+// }
 
-	// const lengthR = (fs) => {
-	// 	let ss = fs
-	// 		.map((f) => f.trim())
-	// 		.reduce((state, input) => (state += input), '')
-	// 	return ss === '' ? false : true
-	// }
-
-	// const length = (fs) => {
-	// 	let ss = ''
-	// 	fs.forEach((f) => (ss += f.trim()))
-	// 	return ss === '' ? false : true
-	// }
+// const length = (fs) => {
+// 	let ss = ''
+// 	fs.forEach((f) => (ss += f.trim()))
+// 	return ss === '' ? false : true
+// }

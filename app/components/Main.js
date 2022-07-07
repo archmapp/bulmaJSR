@@ -1,6 +1,7 @@
 import React from 'react'
-import { Switch } from 'react-router-dom'
-import { Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+
+import Aside from './Aside'
 
 import Top from './B/Top'
 import Overview from './B/Overview'
@@ -34,11 +35,13 @@ import CUseMemo from './H/CUseMemo'
 function Main() {
 	return (
 		<>
-			<main className="main pt-0 is-flex-grow-1">
+			<main className="main">
 				<div className="container">
-					<div className="columns is-centered">
-						<div className="column is-size-6 pt-0">
-							{/* <SlideRoutes location={location} duration={500} className="mb-1"> */}
+					<div className="columns is-centered is-mobile is-gapless is-vcentered">
+						<div className="column is-2 has-background-primary-light">
+							<Aside />
+						</div>
+						<div className="column is-10 is-size-6 pt-0">
 							<Switch>
 								<Route path="/" exact component={Top} className="active mt-1" />
 								<Route path="/Overview" component={Overview} />
@@ -55,7 +58,7 @@ function Main() {
 
 								<Route path="/NshortJS" component={NshortJS} />
 								<Route path="/Nreact" component={Nreact} />
-								<Route path="/Nreact2" component={Nreact2} />
+								{/* <Route path="/Nreact2" component={Nreact2} /> */}
 								<Route path="/About" component={About} />
 
 								<Route path="/Rform" component={Rform} />
@@ -69,7 +72,6 @@ function Main() {
 
 								<Route component={Top} className="" />
 							</Switch>
-							{/* </SlideRoutes> */}
 						</div>
 					</div>
 				</div>

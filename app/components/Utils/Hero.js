@@ -14,7 +14,7 @@ function Hero() {
 							</Link>
 						</h1>
 						<h2 className="subtitle is-size-4 has-text-centered mt-2">
-							javascriptを試してみよう。
+							React javascript を試してみよう。
 						</h2>
 						<h2 className="subtitle is-6 has-text-centered mt-2">
 							~~ Bulmaホームページの流れに沿って ~~

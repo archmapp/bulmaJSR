@@ -152,7 +152,7 @@ function Nreact2() {
 					<div className="columns is-centered">
 						<div className="column is-10 message">
 							<div className="message-header has-background-grey px-5 py-3 mb-4 is-size-5 has-text-weight-medium">
-								以下は、Bulmaの利用例です。
+								以下は、Bulma (Javascript) の利用例です。
 							</div>
 							<b className="is-size-5">button</b>
 							<article className="message is-primary my-3 py-5 pl-3" id="b-r">

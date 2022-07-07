@@ -1,0 +1,43 @@
+<!-- http://geta6.logdown.com/posts/142636-js-before-after -->
+<!-- jsで:before :after疑似要素にアクセスする -->
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			#target:before {
+				display: block;
+				content: attr(data);
+				width: 160px;
+				height: 90px;
+				color: white;
+				background: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="target"></div>
+		<input id="button" type="button" value="click" />
+		<!-- <script src='script.js'></script> -->
+		<script>
+			;(function () {
+				var target = document.getElementById('target'),
+					button = document.getElementById('button')
+
+				button.addEventListener(
+					'click',
+					function () {
+						target.setAttribute('data', 'this is before content')
+					},
+					false
+				)
+			})()
+		</script>
+	</body>
+</html>

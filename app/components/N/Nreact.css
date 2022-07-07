@@ -3,13 +3,18 @@
   align-items: center;
 }
 
-.alignItems {
+.flexAlign {
   display: flex;
   align-items: center;
 }
 
-.alignItems2 {
+.flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* color: hsl(171, 100%, 96%);
+  #EBFFFC
+  has-text-primary-light
+  has-background-primary-light
+  */
 }

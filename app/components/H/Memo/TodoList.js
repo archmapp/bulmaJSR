@@ -6,12 +6,12 @@ const TodoList = ({ todos, completeTodo }) => {
 
 	return (
 		<ul>
-			{todos.map((todo, index) => (
+			{todos.map((todo, i) => (
 				<Todo
 					todo={todo}
 					completeTodo={completeTodo}
-					index={index}
-					key={index}
+					index={i}
+					key={i}
 				/>
 			))}
 		</ul>

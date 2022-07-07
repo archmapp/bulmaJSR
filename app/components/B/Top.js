@@ -1,7 +1,11 @@
 import React from 'react'
 
 import Hero from '../utils/Hero'
-// import Hero from '../utils/Hero'
+import Tag from '../../css/bulma-utils/tag'
+
+import Q1 from '../../assets/QRcode/QR_sansuu50.png'
+import Q2 from '../../assets/QRcode/QR_ninja50.png'
+import Q3 from '../../assets/QRcode/QR_ippatu111.png'
 
 function Top() {
 	function CC({ __html }) {
@@ -48,6 +52,11 @@ function Top() {
 							<span className="has-text-weight-semibold has-text-info">
 								終了
 							</span>
+							<Tag
+								hint="Angular"
+								msg="meanスタックの採用"
+								warning="is-danger"
+							></Tag>
 							<h2
 								className="is-size-6 has-text-centered mt-3"
 								style={{ lineHeight: '1.7rem' }}
@@ -81,24 +90,54 @@ function Top() {
 									</div>
 								</h3>
 								<div className="subtitle has-text-centered is-size-6-mobile has-text-primary-dark has-text-weight-semibold">
-									<p className="f-size">更新日：2022/01/07</p>
+									<p className="f-size">更新日：2022/07/07</p>
 								</div>
+							</div>
+						</div>
+					</article>
+
+					<article className="panel is-warning">
+						<p className="panel-heading">第三版・Bulmaと共に！　開発予定</p>
+
+						<div className="panel-block is-flex is-justify-content-center">
+							<div className="box notification has-background-white-ter py-3 my-3 mx-2">
+								<h3 className="subtitle is-size-5 mb-3">
+									<div className="has-text-centered is-size-6-mobile f-size">
+										<p className="f-size">
+											webpackでの環境構築は取りやめて、次は{' '}
+											<span className="has-text-danger has-text-weight-semibold">
+												Next.js
+											</span>{' '}
+											に挑戦しようと考えています。
+										</p>
+									</div>
+								</h3>
 							</div>
 						</div>
 					</article>
 
 					<article className="panel is-info mt-6">
 						<p className="panel-heading">
-							WEBアプリ <small>(ゲーム) </small>の紹介
+							WEBアプリ
+							<span className="tag is-danger is-large mx-1">
+								小学生用ゲーム
+							</span>
+							の紹介
 						</p>
 
-						<div className="panel-block is-flex is-flex-direction-column is-justify-content-center">
+						<div
+							className="panel-block is-flex is-flex-direction-column is-justify-content-center"
+							style={{ minWidth: '400px' }}
+						>
 							<article className="message is-primary mb-0">
 								<div className="message-header mt-3 pb-1">
 									<p>リンク先</p>
 								</div>
 								<div className="message-body is-size-6 py-2 px-0">
-									<table className="table is-hoverable is-size-7-mobile">
+									<table
+										className="table is-hoverable is-size-7-mobile"
+										style={{ minWidth: '400px' }}
+									>
 										<tbody className="f-size">
 											<tr>
 												<th className="has-text-right">
@@ -138,9 +177,58 @@ function Top() {
 												</th>
 												<td className="td_boxes">宇宙の旅</td>
 											</tr>
+											<tr>
+												<th className="has-text-right">
+													<a href="https://nyan-gules.vercel.app/">
+														にゃんにゃん動画
+													</a>
+												</th>
+												<td className="td_boxes has-text-danger">
+													初めてのNext.js
+												</td>
+											</tr>
+											<tr>
+												<th className="has-text-right">
+													<a href="https://isnt-archmapp-awesome.netlify.app/">
+														にゃんにゃん動画
+													</a>
+												</th>
+												<td className="td_boxes">旧版</td>
+											</tr>
+											<tr>
+												<th className="has-text-right">
+													<a href="https://nextjs-pokemon-kappa.vercel.app/">
+														ポケモン画像一覧
+													</a>
+												</th>
+												<td className="td_boxes has-text-danger">Next.js 版</td>
+											</tr>
 										</tbody>
 									</table>
 								</div>
+								<article className="message is-warning has-text-centered">
+									<div className="message-body mt-3">
+										~~~<strong>年配の方も楽しめるかも</strong>~~~
+										<br />
+										<div className="mt-2 mb-4">
+											パソコン・タブレット・スマホ も OK！
+										</div>
+										<div className="f-size is-flex is-justify-content-space-around has-background-info-light px-2">
+											<figure>
+												<figcaption>さんすう入門</figcaption>
+												<img src={Q1} alt="URL: QR_sansuu50.png" />
+											</figure>
+											<figure className="f-sizeQ2">
+												<figcaption>しんけいすいじゃく</figcaption>
+												<img src={Q2} alt="URL: QR_ninja50.png" />
+											</figure>
+											<figure className="f430_Q3">
+												<figcaption>一発勝負 </figcaption>
+												<img src={Q3} alt="URL: QR_ippatu111.png" />
+											</figure>
+										</div>
+									</div>
+								</article>
 
 								<div
 									className="

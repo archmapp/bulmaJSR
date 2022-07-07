@@ -97,6 +97,10 @@ let config = {
 			bulmaCalendar: './bulma-calendar.min.js',
 		}),
 	],
+
+	// externals: {
+	// 	react: 'React',
+	// },
 }
 
 if (isDev) {

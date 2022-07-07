@@ -1,5 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
+import TtSpan from '../../css/bulma-utils/TtSpan'
 
 function NreactHero() {
   return (
@@ -14,8 +15,10 @@ function NreactHero() {
 						</h1>
 						<small className="is-size-6 ml-6">サンプル1：</small>
 						<h2 className="subtitle is-size-4 has-text-centered mt-2">
-							create-react-app <small className="is-size-5">の後で</small>{' '}
-							webpackを操作する
+							create-react-app <small className="is-size-5">の後で</small>
+							<TtSpan data="eject せずに" top="top" warning="danger">
+								webpackを操作する
+							</TtSpan>
 						</h2>
 						<h2 className="subtitle is-size-5 has-text-centered mt-2">
 							~~ customize-cra, react-app-rewired を試してみよう。 ~~

@@ -1,17 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+import styles from './Aside.module.scss'
+
 function Aside() {
 	const aStyle = { color: 'Blue', fontWeight: 'bold' }
 
-	const pageLoading = () => {
+	const pageLoading = (e) => {
+		e.target.blur()
 		$$.qcL_T('#selAside', 500)
 	}
 
 	return (
 		<>
-			<aside id="aside1" className="sidebar-left">
-				<article className="panel is-info pb-2">
+			<aside id="aside1" className={styles.sidebarLeft}>
+				<article className="panel is-info pb-2 ml-3">
 					<p
 						className="panel-heading has-text-centered has-background-info-dark is-size-6"
 						style={{ borderBottom: 'solid 1px' }}
@@ -25,6 +28,7 @@ function Aside() {
 							to="/"
 							className="pt-1 py-2 ml-3"
 							activeStyle={aStyle}
+							onClick={pageLoading}
 						>
 							トップ
 						</NavLink>
@@ -142,7 +146,10 @@ function Aside() {
 						<button
 							className="button is-info is-outlined has-tooltip-right has-tooltip-warning"
 							data-tooltip="活動・紹介へ"
-							onClick={() => window.open("https://archmapp.github.io/about2/")}
+							onClick={(e) => {
+								e.target.blur()
+								window.open('https://archmapp.github.io/about2/')
+							}}
 						>
 							About2
 						</button>

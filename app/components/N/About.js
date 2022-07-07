@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Tag from '../../css/bulma-utils/tag'
+
 function About() {
 
 		return (
@@ -57,7 +59,7 @@ function About() {
 							</div>
 							<div className="box py-4">
 								<h1 className="notification title has-background-warning-dark has-text-white">
-									最近公開したWEBアプリ　💕
+									主な公開 WEBアプリ　💕
 								</h1>
 
 								<ul className="panel">
@@ -82,9 +84,26 @@ function About() {
 											URL：https://safe-peak-55766.herokuapp.com/api
 										</a>
 									</li>
+									<li className="ml-5 py-2">
+										<Tag
+											hint="終了のお知らせ"
+											msg="2022/02/02 までで、管理・提供を終らせていただきました。"
+											warning="is-warning"
+										></Tag>
+									</li>
 								</ul>
 
-								{/* C:\Users\Owner\Desktop\Nodejs\mean\BradWebpack\BRAD_react-sass-webpack\2 route slide\app\ */}
+								<h2 className="notification subtitle has-background-warning has-text-white">
+									<span className="tag is-danger is-large mx-1">
+										小学生用ゲーム
+									</span>
+									　
+									<span className="tag is-medium has-background-white-ter has-text-black-ter mx-3">
+										~~~
+										<strong className="mx-2">年配の方も楽しめるかも</strong>
+										~~~
+									</span>
+								</h2>
 								<ul className="panel">
 									<li>
 										<h1 className="panel-block subtitle has-background-warning-light">
@@ -165,8 +184,30 @@ function About() {
 								<ul className="panel">
 									<li>
 										<h1 className="panel-block subtitle has-background-warning-light">
-											いん石を狙え&nbsp;<span style={{ color: 'red' }}>❣</span>　{' '}
-											<span className="is-size-6">タブレット以上</span>
+											ティック・タック・トゥ&nbsp;
+											<span style={{ color: 'red' }}>❣</span>
+										</h1>
+									</li>
+									<li className="my-0 ml-5 pt-2">
+										<span className="iken is-size-4 has-text-weight-bold has-text-danger-dark">
+											三目並べ
+										</span>
+										<span className="is-size-6 ml-6">
+											三目並べ　　~~ Tic Tac Toe ~~
+										</span>
+									</li>
+									<li className="ml-5 py-2">
+										<a href="https://flashcard2.netlify.app">
+											URL：https://archtictactoe.netlify.app
+										</a>
+									</li>
+								</ul>
+
+								<ul className="panel">
+									<li>
+										<h1 className="panel-block subtitle has-background-warning-light">
+											いん石を狙え&nbsp;<span style={{ color: 'red' }}>❣</span>
+											　 <span className="is-size-6">タブレット以上</span>
 										</h1>
 									</li>
 									<li className="my-0 ml-5 pt-2">

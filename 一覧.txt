@@ -12,6 +12,16 @@ C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\app\index.html
 https://www.archmapp.tech/
 第二版・Bulmaと共に！
 Bulma・React入門 javascript
+
+  npm run build
+  npm run netlify-prod
+～～～
+Unique Deploy URL: 
+https://622456d9d9b8df1caff0742a--bulmajsr.netlify.app        
+Website URL:       https://www.archmapp.tech
+https://app.netlify.com/sites/bulmajsr/settings/general
+
+
 https://github.com/archmapp/bulmaJSR.git
 
 
@@ -36,13 +46,13 @@ https://github.com/archmapp/hajimeteno-keisan.git
 ✖　一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
 ✖　https://github.com/archmapp/ippatsu.git
 
-C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard_Netlify2\public\index.html
+C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard_Netlify2\
 https://flashcard2.netlify.app
 一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
 https://app.netlify.com/sites/flashcard2/overview
 
 
-C:\Users\Owner\Desktop\Nodejs\ReactN\Ninja\public\index.html
+C:\Users\Owner\Desktop\Nodejs\ReactN\Ninja
 https://jolly-lamport-67e201.netlify.app/
 記憶ゲーム しんけいすいじゃく react Bulma 忍者
 https://github.com/archmapp/memory-game.git
@@ -50,9 +60,26 @@ https://github.com/archmapp/memory-game.git
   npm run netlify-prod ... 重要 Publish directory: build
 
 
+C:\Users\Owner\Desktop\Nodejs\React\TUTORIALS\react-tic-tac-toe-hooks-master
+Unique Deploy URL: https://622372b5f160c80f1e61fddf--archtictactoe.netlify.app
+Website URL:       https://archtictactoe.netlify.app
+ティック・タック・トゥ Tic Tac Toe 
+
+
 C:\Users\Owner\Desktop\Nodejs\React\game\Space-Game-master
 いん石を狙え
 Website URL: https://space-game2.netlify.app/
+
+
+C:\Users\Owner\Desktop\Nodejs\ReactNext\nextjs-blog\Bulma\games\nyan\
+URL: https://isnt-archmapp-awesome.netlify.app/
+にゃんにゃん動画のご紹介　Next.js 版
+
+C:\Users\Owner\Desktop\Nodejs\React\codesandbox\cs1\react-bulma1\redux-toolkit-cat
+Unique Deploy URL: https://624312fd60dede0f77ccb341--isnt-archmapp-awesome.netlify.app
+Website URL:       https://isnt-archmapp-awesome.netlify.app/
+にゃんにゃん動画のご紹介　旧版
+
 
 太陽系
 C:\Users\Owner\Desktop\Nodejs\css\CSS\animations\太陽系.html
@@ -76,3 +103,22 @@ https://www.onamae.com/domain/navi/dns_controll/input
 www.archmapp.tech	CNAME	
 3600
 gracious-carson-8848e2.netlify.app
+
+
+
+
+[React・Bulmaでの開発環境のサンプル]
+  開発環境１
+  C:\Users\Owner\Desktop\Nodejs\React\codesandbox\cs1\react-bulma1
+  https://archmapp.github.io/react_env1/
+  git remote -v
+  origin  https://github.com/archmapp/react_env1.git (fetch)
+  origin  https://github.com/archmapp/react_env1.git (push)  
+
+  開発環境２
+  C:\Users\Owner\Desktop\Nodejs\React\codesandbox\cs1\react-bulma2
+  https://archmapp.github.io/react_env2/
+  git remote -v
+  origin  https://github.com/archmapp/react_env2.git (fetch)
+  origin  https://github.com/archmapp/react_env2.git (push)  
+

@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import contentsCard from './contents/contentsCard'
 import DDmenu from './contents/DDmenu'
 
-import Hero from '../utils/Nreact2Hero'
+import Hero from './Nreact2Hero'
 // import Hero from '../../utils/Hero'
 
 function Nreact2() {

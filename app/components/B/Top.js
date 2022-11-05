@@ -90,7 +90,7 @@ function Top() {
 									</div>
 								</h3>
 								<div className="subtitle has-text-centered is-size-6-mobile has-text-primary-dark has-text-weight-semibold">
-									<p className="f-size">更新日：2022/07/07</p>
+									<p className="f-size">更新日：2022/11/07</p>
 								</div>
 							</div>
 						</div>
@@ -104,12 +104,22 @@ function Top() {
 								<h3 className="subtitle is-size-5 mb-3">
 									<div className="has-text-centered is-size-6-mobile f-size">
 										<p className="f-size">
-											webpackでの環境構築は取りやめて、次は{' '}
+											webpackでの環境構築は取りやめて、次回から{' '}
 											<span className="has-text-danger has-text-weight-semibold">
 												Next.js
 											</span>{' '}
 											に挑戦しようと考えています。
 										</p>
+									</div>
+									<div className="box notification has-background-white-ter py-3 my-3 mx-2">
+										<div className="subtitle is-size-6 mb-3">
+											<div className="has-text-centered is-size-6-mobile f-size-s">
+												<p className="f-size-s">
+													関連して、PWA、strapi、framer-motion
+													を取り上げていきます。
+												</p>
+											</div>
+										</div>
 									</div>
 								</h3>
 							</div>
@@ -228,6 +238,19 @@ function Top() {
 											</figure>
 										</div>
 									</div>
+									<hr />
+									<div className="is-inline-block my-2">
+										・【
+										<span className="has-text-danger is-size-5 has-text-weight-semibold">
+											<span className="is-size-5">PWA</span>
+										</span>
+										】<span className="is-size-6">対応版&nbsp;は、</span>
+										<a href="https://archmapp77.github.io/archmapp77-quickview/">
+											【
+											<span className="has-text-primary is-size-6">こちら</span>
+											】
+										</a>
+									</div>
 								</article>
 
 								<div
@@ -237,7 +260,7 @@ function Top() {
 									is-size-4
 									py-3
 									mx-0
-									my-2
+									my-4
 								"
 									style={{ lineHeight: '2rem', display: 'block' }}
 								>
@@ -258,6 +281,15 @@ function Top() {
 											>
 												FLEXBOX 練習帳
 											</button>
+										</div>
+										<div className="box notification has-background-white-ter py-3 my-3 mx-2">
+											<div className="subtitle is-size-6 mb-3">
+												<div className="has-text-centered is-size-6-mobile f-size-s">
+													<p className="f-size-s pt-2">
+														Flexboxの知識を増やしていきます。
+													</p>
+												</div>
+											</div>
 										</div>
 									</nav>
 								</div>

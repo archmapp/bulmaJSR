@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import contentsCard from './contents/contentsCard'
 import DDmenu from './contents/DDmenu'
 
-import Hero from '../utils/NreactHero'
+import Hero from './NreactHero'
 import './Nreact.css'
 import Tag from '../../css/bulma-utils/tag'
 import TagM from '../../css/bulma-utils/tagM'

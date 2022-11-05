@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Hero from '../utils/Hero'
+import Hero from './Hero'
 import Tag from '../../css/bulma-utils/tag'
 
 import Q1 from '../../assets/QRcode/QR_sansuu50.png'
@@ -103,8 +103,8 @@ function Top() {
 							<div className="box notification has-background-white-ter py-3 my-3 mx-2">
 								<h3 className="subtitle is-size-5 mb-3">
 									<div className="has-text-centered is-size-6-mobile f-size">
-										<p className="f-size">
-											webpackでの環境構築は取りやめて、次回から{' '}
+										<p className="f-size" style={{'line-height': '2.0rem'}}>
+											webpackでの環境構築は取りやめて、<br />次回から{' '}
 											<span className="has-text-danger has-text-weight-semibold">
 												Next.js
 											</span>{' '}
@@ -116,7 +116,7 @@ function Top() {
 											<div className="has-text-centered is-size-6-mobile f-size-s">
 												<p className="f-size-s">
 													関連して、PWA、strapi、framer-motion
-													を取り上げていきます。
+													を取り上げる予定です。
 												</p>
 											</div>
 										</div>

@@ -1,3 +1,42 @@
+
+git remote -v
+origin  https://github.com/archmapp/bulmaJSR.git (fetch)
+origin  https://github.com/archmapp/bulmaJSR.git (push) 
+
+
+github経由、netlifyへdeploy。
+
+gitpush v3_misc_dummy
+gitpush v4_Top_padding
+  ty7575au@yahoo.co.jp
+  https://github.com/archmapp/bulmaJSR
+
+
+[archmapp's team > bulmajsr]
+https://app.netlify.com/sites/bulmajsr/overview
+bulmajsr
+https://63662fff6d69cd482d127c76--bulmajsr.netlify.app/#/
+https://www.archmapp.tech お名前.com
+
+Deploys from GitHub.
+Last published at 6:42 PM.
+
+
+Deploys for bulmajsr
+https://www.archmapp.tech
+Deploys from github.com/archmapp/bulmaJSR.
+Published main@HEAD
+Auto publishing is on. Deploys from main are published automatically.
+
+
+
+
+
+
+
+
+
+netlify直接は、取りやめ。
 npm run build
 npm run netlify-prod
   ? Publish directory docs

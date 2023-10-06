@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Hero from './Hero'
 import Tag from '../../css/bulma-utils/tag'
+import Hero from './Hero'
 
-import Q1 from '../../assets/QRcode/QR_sansuu50.png'
-import Q2 from '../../assets/QRcode/QR_ninja50.png'
 import Q3 from '../../assets/QRcode/QR_ippatu111.png'
+import Q2 from '../../assets/QRcode/QR_ninja50.png'
+import Q1 from '../../assets/QRcode/QR_sansuu50.png'
 
 function Top() {
 	function CC({ __html }) {
@@ -44,8 +44,7 @@ function Top() {
 							<span
 								className="iken has-tooltip-top has-tooltip-danger has-text-info is-size-4 is-size-5-mobile"
 								data-tooltip="予定価格とモデルから、素早く一般工事費を推定するWEBアプリ"
-								style={{ cursor: 'auto' }}
-							>
+								style={{ cursor: 'auto' }}>
 								i入札(建築編)
 							</span>
 							【 入札アプリ（建築編）】
@@ -55,12 +54,10 @@ function Top() {
 							<Tag
 								hint="Angular"
 								msg="meanスタックの採用"
-								warning="is-danger"
-							></Tag>
+								warning="is-danger"></Tag>
 							<h2
 								className="is-size-6 has-text-centered mt-3"
-								style={{ lineHeight: '1.7rem' }}
-							>
+								style={{ lineHeight: '1.7rem' }}>
 								<span className="has-text-weight-semibold has-text-info">
 									入札アプリ（建築編）
 								</span>
@@ -100,24 +97,23 @@ function Top() {
 						<p className="panel-heading">第三版・Bulmaと共に！　開発予定</p>
 
 						<div className="panel-block is-flex is-justify-content-center">
-							<div className="box notification has-background-white-ter py-3 my-3 mx-2">
-								<h3 className="subtitle is-size-5 mb-3">
+							<div className="box notification has-background-white-ter py-3 px-1 my-3 mx-2">
+								<h3 className="subtitle is-size-5 px-0 mb-3">
 									<div className="has-text-centered is-size-6-mobile f-size">
-										<p className="f-size" style={{'line-height': '2.0rem'}}>
-											webpackでの環境構築は取りやめて、<br />次回から{' '}
+										<p className="f-size" style={{ lineHeight: '2.0rem' }}>
+											webpackでの環境構築は取りやめて、
+											<br />
+											次回から{' '}
 											<span className="has-text-danger has-text-weight-semibold">
 												Next.js
 											</span>{' '}
 											に挑戦しようと考えています。
 										</p>
 									</div>
-									<div className="box notification has-background-white-ter py-3 my-3 mx-2">
+									<div className="box notification has-background-white-ter py-3 px-0 my-3">
 										<div className="subtitle is-size-6 mb-3">
-											<div className="has-text-centered is-size-6-mobile f-size-s">
-												<p className="f-size-s">
-													関連して、PWA、strapi、framer-motion
-													を取り上げる予定です。
-												</p>
+											<div className="has-text-centered is-size-6-mobile f-size-s pb-0">
+												<p className="f-size-s">Vite Next.js Remix.js</p>
 											</div>
 										</div>
 									</div>
@@ -137,8 +133,7 @@ function Top() {
 
 						<div
 							className="panel-block is-flex is-flex-direction-column is-justify-content-center"
-							style={{ minWidth: '400px' }}
-						>
+							style={{ minWidth: '400px' }}>
 							<article className="message is-primary mb-0">
 								<div className="message-header mt-3 pb-1">
 									<p>リンク先</p>
@@ -146,8 +141,7 @@ function Top() {
 								<div className="message-body is-size-6 py-2 px-0">
 									<table
 										className="table is-hoverable is-size-7-mobile"
-										style={{ minWidth: '400px' }}
-									>
+										style={{ minWidth: '400px' }}>
 										<tbody className="f-size">
 											<tr>
 												<th className="has-text-right">
@@ -262,8 +256,7 @@ function Top() {
 									mx-0
 									my-4
 								"
-									style={{ lineHeight: '2rem', display: 'block' }}
-								>
+									style={{ lineHeight: '2rem', display: 'block' }}>
 									<nav className="level">
 										<div className="level-item">
 											<button
@@ -277,8 +270,7 @@ function Top() {
 													window.open(
 														'https://archmapp2.github.io/bulmaJS/src/sub/flex/Diagram.html'
 													)
-												}
-											>
+												}>
 												FLEXBOX 練習帳
 											</button>
 										</div>

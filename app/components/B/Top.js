@@ -97,23 +97,23 @@ function Top() {
 						<p className="panel-heading">第三版・Bulmaと共に！　開発予定</p>
 
 						<div className="panel-block is-flex is-justify-content-center">
-							<div className="box notification has-background-white-ter py-3 px-1 my-3 mx-2">
+							<div className="box notification has-background-white-ter pt-3 pb-0  px-1 mt-3 mx-2">
 								<h3 className="subtitle is-size-5 px-0 mb-3">
 									<div className="has-text-centered is-size-6-mobile f-size">
-										<p className="f-size" style={{ lineHeight: '2.0rem' }}>
+										<p className="f-size-ss" style={{ lineHeight: '2.0rem' }}>
 											webpackでの環境構築は取りやめて、
+											<span className="f-size-ss-none">次回から</span>
 											<br />
-											次回から{' '}
 											<span className="has-text-danger has-text-weight-semibold">
 												Next.js
 											</span>{' '}
 											に挑戦しようと考えています。
 										</p>
 									</div>
-									<div className="box notification has-background-white-ter py-3 px-0 my-3">
+									<div className="box notification has-background-white-ter pt-2 pb-1 px-0 my-2">
 										<div className="subtitle is-size-6 mb-3">
-											<div className="has-text-centered is-size-6-mobile f-size-s pb-0">
-												<p className="f-size-s">Vite Next.js Remix.js</p>
+											<div className="has-text-centered is-size-6-mobile f-size-ss pb-0">
+												<p className="f-size-ss">Vite Next.js Remix.js</p>
 											</div>
 										</div>
 									</div>

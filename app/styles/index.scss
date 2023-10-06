@@ -9,7 +9,7 @@
 // @import '../../node_modules/bulma-extensions/bulma-badge/dist/css/bulma-badge.min.css';
 
 #myCanvas {
-  border-radius: 7px;
+	border-radius: 7px;
 }
 
 .sidebar-left {
@@ -105,8 +105,23 @@ label {
 	}
 }
 
-@media screen and (max-width: 550px) {
-	.f-size {
+@media screen and (max-width: 680px) {
+	.f-size-ss {
 		font-size: 0.7rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.f-size-ss {
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.f-size-ss {
+		font-size: 0.5rem;
+	}
+	.f-size-ss-none {
+		display: none;
 	}
 }

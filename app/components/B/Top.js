@@ -100,8 +100,10 @@ function Top() {
 							<div className="box notification has-background-white-ter pt-3 pb-0  px-1 mt-3 mx-2">
 								<h3 className="subtitle is-size-5 px-0 mb-3">
 									<div className="has-text-centered is-size-6-mobile f-size">
-										<p className="f-size-ss" style={{ lineHeight: '2.0rem' }}>
-											webpackでの環境構築は取りやめて、
+										<p className="f-size-ss" style={{ lineHeight: '1.３rem' }}>
+											<span className="f-size-ss-none">
+												webpackでの環境構築は取りやめて、
+											</span>
 											<span className="f-size-ss-none">次回から</span>
 											<br />
 											<span className="has-text-danger has-text-weight-semibold">
@@ -124,7 +126,7 @@ function Top() {
 
 					<article className="panel is-info mt-6">
 						<p className="panel-heading">
-							WEBアプリ
+							<span className="">WEBアプリ</span>
 							<span className="tag is-danger is-large mx-1">
 								小学生用ゲーム
 							</span>
@@ -133,7 +135,7 @@ function Top() {
 
 						<div
 							className="panel-block is-flex is-flex-direction-column is-justify-content-center"
-							style={{ minWidth: '400px' }}>
+							style={{ minWidth: '200px' }}>
 							<article className="message is-primary mb-0">
 								<div className="message-header mt-3 pb-1">
 									<p>リンク先</p>

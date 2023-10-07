@@ -14,11 +14,10 @@ function Aside() {
 	return (
 		<>
 			<aside id="aside1" className={styles.sidebarLeft}>
-				<article className="panel is-info pb-2 ml-3">
+				<article className="is-info pb-2 ml-3">
 					<p
-						className="panel-heading has-text-centered has-background-info-dark is-size-6"
-						style={{ borderBottom: 'solid 1px' }}
-					>
+						className="panel-heading has-text-centered has-background-info-dark has-text-white-ter"
+						style={{ borderBottom: 'solid 1px' }}>
 						メニュー
 					</p>
 
@@ -28,8 +27,7 @@ function Aside() {
 							to="/"
 							className="pt-1 py-2 ml-3"
 							activeStyle={aStyle}
-							onClick={pageLoading}
-						>
+							onClick={pageLoading}>
 							トップ
 						</NavLink>
 						{/* <NavLink to="/Overview" className=" pt-1 ml-3" activeStyle={aStyle}>
@@ -67,32 +65,28 @@ function Aside() {
 							to="/Elements"
 							className="pt-1 ml-3"
 							activeStyle={aStyle}
-							onClick={pageLoading}
-						>
+							onClick={pageLoading}>
 							Elements
 						</NavLink>
 						<NavLink
 							to="/Components"
 							className="pt-1 ml-3"
 							activeStyle={aStyle}
-							onClick={pageLoading}
-						>
+							onClick={pageLoading}>
 							Components
 						</NavLink>
 						<NavLink
 							to="/Form"
 							className="pt-1 ml-3"
 							activeStyle={aStyle}
-							onClick={pageLoading}
-						>
+							onClick={pageLoading}>
 							Form
 						</NavLink>
 						<NavLink
 							to="/Layout"
 							className="pt-1 ml-3"
 							activeStyle={aStyle}
-							onClick={pageLoading}
-						>
+							onClick={pageLoading}>
 							Layout
 						</NavLink>
 
@@ -107,16 +101,14 @@ function Aside() {
 							className="mt-2 mb-0 mx-3 pl-1"
 							// style={{ backgroundColor: '#a4c0e2' }}
 							activeStyle={aStyle}
-							onClick={pageLoading}
-						>
+							onClick={pageLoading}>
 							Extensions
 						</NavLink>
 						{/* bulma-pageloader/ in bulma-extensions.min.css */}
 						<div
 							id="selAside"
 							className="pageloader is-info is-left-to-right"
-							style={{ opacity: 0.3 }}
-						>
+							style={{ opacity: 0.3 }}>
 							<span className="title has-text-black has-text-weight-bold is-size-5">
 								ナビゲーティング ...
 							</span>
@@ -137,8 +129,7 @@ function Aside() {
 							to="/About"
 							className="navbar-item has-text-black-bis mx-3 py-1 has-tooltip-right has-tooltip-warning"
 							data-tooltip="情報・サンプル集"
-							onClick={pageLoading}
-						>
+							onClick={pageLoading}>
 							About&nbsp;
 						</NavLink>
 					</div>
@@ -149,8 +140,7 @@ function Aside() {
 							onClick={(e) => {
 								e.target.blur()
 								window.open('https://archmapp.github.io/about2/')
-							}}
-						>
+							}}>
 							About2
 						</button>
 					</div>

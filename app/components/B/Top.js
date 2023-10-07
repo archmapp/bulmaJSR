@@ -87,7 +87,7 @@ function Top() {
 									</div>
 								</h3>
 								<div className="subtitle has-text-centered is-size-6-mobile has-text-primary-dark has-text-weight-semibold">
-									<p className="f-size">更新日：2022/11/07</p>
+									<p className="f-size">更新日：2023/10/07</p>
 								</div>
 							</div>
 						</div>
@@ -127,10 +127,10 @@ function Top() {
 					<article className="panel is-info mt-6">
 						<p className="panel-heading">
 							<span className="">WEBアプリ</span>
-							<span className="tag is-danger is-large mx-1">
+							<span className="tag is-danger is-size-6 mx-1">
 								小学生用ゲーム
 							</span>
-							の紹介
+							<span className="is-size-7-mobile">の紹介</span>
 						</p>
 
 						<div
@@ -143,7 +143,7 @@ function Top() {
 								<div className="message-body is-size-6 py-2 px-0">
 									<table
 										className="table is-hoverable is-size-7-mobile"
-										style={{ minWidth: '400px' }}>
+										style={{ minWidth: '270px' }}>
 										<tbody className="f-size">
 											<tr>
 												<th className="has-text-right">
@@ -219,7 +219,8 @@ function Top() {
 										<div className="mt-2 mb-4">
 											パソコン・タブレット・スマホ も OK！
 										</div>
-										<div className="f-size is-flex is-justify-content-space-around has-background-info-light px-2">
+										<div className="f-size is-flex-tablet is-justify-content-space-around has-background-info-light px-2">
+											{/* <div className="f-size is-flex is-flex-direction-column is-justify-content-space-around has-background-info-light px-2"> */}
 											<figure>
 												<figcaption>さんすう入門</figcaption>
 												<img src={Q1} alt="URL: QR_sansuu50.png" />

@@ -87,14 +87,14 @@ function Top() {
 									</div>
 								</h3>
 								<div className="subtitle has-text-centered is-size-6-mobile has-text-primary-dark has-text-weight-semibold">
-									<p className="f-size">更新日：2023/10/07</p>
+									<p className="f-size">更新日：2023/10/10</p>
 								</div>
 							</div>
 						</div>
 					</article>
 
 					<article className="panel is-warning">
-						<p className="panel-heading">第三版・Bulmaと共に！　開発予定</p>
+						<p className="panel-heading">第四版・tailwindと共に！　開発予定</p>
 
 						<div className="panel-block is-flex is-justify-content-center">
 							<div className="box notification has-background-white-ter pt-3 pb-0  px-1 mt-3 mx-2">
@@ -163,9 +163,19 @@ function Top() {
 											</tr>
 											<tr>
 												<th className="has-text-right">
-													<a href="https://flashcard2.netlify.app">一発勝負</a>
+													<a href="https://ippatsu-main.vercel.app/">
+														新・一発勝負
+													</a>
 												</th>
-												<td className="td_boxes">記憶ゲーム</td>
+												<td className="td_boxes">さぁどれだ❣</td>
+											</tr>
+											<tr>
+												<th className="has-text-right">
+													<a href="https://flashcard2.netlify.app">
+														旧・一発勝負
+													</a>
+												</th>
+												<td className="td_boxes">さぁどれだ❣</td>
 											</tr>
 											<tr>
 												<th className="has-text-right">

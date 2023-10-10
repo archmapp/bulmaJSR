@@ -167,7 +167,9 @@ function Top() {
 														新・一発勝負
 													</a>
 												</th>
-												<td className="td_boxes">さぁどれだ❣</td>
+												<td className="td_boxes">
+													さぁどれだ <span style={{ color: 'red' }}>❣</span>
+												</td>
 											</tr>
 											<tr>
 												<th className="has-text-right">
@@ -175,7 +177,9 @@ function Top() {
 														旧・一発勝負
 													</a>
 												</th>
-												<td className="td_boxes">さぁどれだ❣</td>
+												<td className="td_boxes">
+													さぁどれだ <span style={{ color: 'red' }}>❣</span>
+												</td>
 											</tr>
 											<tr>
 												<th className="has-text-right">
